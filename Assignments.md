@@ -35,18 +35,17 @@ Time-counter modules (6) for HH, MM, SS for current time and stopwatch.
 ## Ella
 
 State controller
+
 * input clk
+* input reset
 * input btn\_mode
-* input btn\_set
+* input btn\_time\_set
 * input btn\_increment
 * input btn\_decrement
-* input btn\_backlight
-* output [2(?):0] state
-* output start\_light
-* output start\_stopwatch
-* output stop\_stopwatch
-* output inc\_s
-* output dec\_s
+* output [2:0] state
+* output run\_stopwatch 
+* output reset\_stopwatch
+* output run\_time
 * output inc\_m
 * output dec\_m
 * output inc\_h
