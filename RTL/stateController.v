@@ -111,7 +111,7 @@ always @(*) begin
 			dec_h <= btn_decrement;
 			run_time <= 1'b0;
 
-			run_stopwatch <= 1'b0;
+			// run_stopwatch <= 1'b0; // latch this??
 			inc_m <= 1'b0;
 			dec_m <= 1'b0;
 			reset_stopwatch <= 1'b0;
@@ -121,7 +121,7 @@ always @(*) begin
 			dec_m <= btn_decrement;
 			run_time <= 1'b0;
 
-			run_stopwatch <= 1'b0;
+			// run_stopwatch <= 1'b0; // latch this??
 			inc_h <= 1'b0;
 			dec_h <= 1'b0;
 			reset_stopwatch <= 1'b0;
