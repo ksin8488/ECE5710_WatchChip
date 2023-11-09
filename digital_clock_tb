@@ -8,7 +8,7 @@ module tb_clock;
     // Outputs
     wire [5:0] seconds;
     wire [5:0] minutes;
-    wire [4:0] hours;
+    wire [5:0] hours;
     wire mode; // may have to modify this
 
     // Instantiate the Unit Under Test (UUT)
