@@ -1,14 +1,4 @@
-/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v {2 {vlog -work work -vopt -stats=none /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v
-Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
--- Compiling module Digital_Clock
-** Warning: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(24): (vlog-2608) Keyword "unsigned" not allowed here in Verilog 2001.
-** Warning: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(25): (vlog-2608) Keyword "unsigned" not allowed here in Verilog 2001.
-** Warning: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(26): (vlog-2608) Keyword "unsigned" not allowed here in Verilog 2001.
-
-Top level modules:
-	Digital_Clock
-
-} {} {}} /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/clk_divider/clk_divider.v {1 {vlog -work work -vopt -stats=none /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/clk_divider/clk_divider.v
+/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/clk_divider/clk_divider.v {1 {vlog -work work -vopt -stats=none /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/clk_divider/clk_divider.v
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 -- Compiling module clk_divider
 
