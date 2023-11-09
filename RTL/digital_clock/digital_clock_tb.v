@@ -1,5 +1,9 @@
+`timescale 1s/1s
+
 
 module tb_clock;
+
+
 
        // Inputs
     reg Clk_1sec;
@@ -32,15 +36,22 @@ module tb_clock;
     
     //Generating the Clock with `1 Hz frequency
     initial Clk_1sec = 0;
-    always #500000000 Clk_1sec = ~Clk_1sec;  //Every 0.5 sec toggle the clock.
-
+    initial min_inc = 0;
+    initial min_dec = 0;
+    initial hour_inc = 0;
+    initial hour_dec = 0;
+    always #1 Clk_1sec = ~Clk_1sec;  //Every sec toggle the clock.
+    always #5 min_inc = ~min_inc; //
+   
     initial begin
         reset = 1;
         clock_enable = 0;
         // Wait 100 ns for global reset to finish
-        #100; 
+        #1; 
         reset = 0; 
 	//clock_enable = 0; 
+	//#1000000000
+	//min_inc = 1;
     end
 
 endmodule
