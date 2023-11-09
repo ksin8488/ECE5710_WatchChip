@@ -21,15 +21,14 @@ module Digital_Clock(
     input hour_inc;
     input hour_dec;
 //What are the Outputs? 
-    output reg unsigned [5:0] seconds; // 6 bits needed for binary representation of 60 2^6 = 64
-    output reg unsigned [5:0] minutes; // 6 bits needed for binary representation of 60 2^6 = 64
-    output reg unsigned [5:0] hours; // 5 bits needed for binary representation of 24 2^5 = 32. *Changed to 6 bits for easy BCD
+    output reg [5:0] seconds; // 6 bits needed for binary representation of 60 2^6 = 64
+    output reg [5:0] minutes; // 6 bits needed for binary representation of 60 2^6 = 64
+    output reg [5:0] hours; // 5 bits needed for binary representation of 24 2^5 = 32. *Changed to 6 bits for easy BCD
 
 
    //Execute the always blocks when the Clock or reset inputs are 
     //changing from 0 to 1(positive edge of the signal)
- always @(posedge(Clk_1sec) or posedge(reset) or posedge(min_inc) or posedge(min_dec) or 
-        posedge(hour_inc) or posedge(hour_dec))) //sensitivity list
+ always @(posedge(Clk_1sec) or posedge(reset)) //sensitivity list
     begin
         if(reset == 1'b1) begin  //check for active high reset.
            //reset the time.
@@ -49,26 +48,38 @@ module Digital_Clock(
 						hours <= hours + 1;
 					end
 				end
+
 				else begin
 					minutes <= minutes + 1;
 				end
 			 end
+
 			else begin
 				seconds <= seconds + 1; //increment sec
 			end
-	  end
-	    if(min_inc == 1'b1) begin
-		    minutes <= minutes + 1;
-	    end
-	    if(min_dec == 1'b1) begin
-		    minutes <= minutes - 1;
-	    end
-	    if(hours_inc == 1'b1) begin
-		    minutes <= hours + 1;
-	    end
-	    if(hours_dec == 1'b1) begin
-		    minutes <= hours - 1;
-	    end
-    end
 
+	  end
+	   
+    end
+	always @(posedge(min_inc) or posedge(min_dec) or posedge(hour_inc) or posedge(hour_dec)) begin
+		 if(min_inc == 1'b1) begin
+		    minutes = minutes + 1;
+		//if(minutes == 59)
+			//minutes <= 0;
+		
+	   	 end
+	    	if(min_dec == 1'b1) begin
+		    minutes = minutes - 1;
+		if(minutes == 0)
+			minutes <= 59;
+	    	end
+	    	if(hour_inc == 1'b1) begin
+		    minutes <= hours + 1;
+		if(hours == 24)
+			hours <= 0;
+	    	end
+	    	if(hour_dec == 1'b1) begin
+		    minutes <= hours - 1;
+	    	end
+	end
 endmodule
