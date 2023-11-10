@@ -4,12 +4,13 @@
  * @author Kashish Singh
  * @date 11/8/2023
  */
-module Seg7Display(clk, seconds_clk, state,
+module Seg7Display(clk, reset, seconds_clk, state,
 current_s, current_m, current_h, stopwatch_s, stopwatch_m, stopwatch_h,
 display_s1, display_m1, display_h1, display_s2, display_m2, display_h2, second);
 
 	input clk;
 	input seconds_clk;
+	input reset;
 	input [2:0] state; //states given by watch_fsm for which "mode" the watch is in
 	input [5:0] current_s; //24-hr clock so need 24dec digits which uses 6-bits
 	input [5:0] current_m; //6-bit for 0-63 values as well as 2digit BCD conversion
@@ -131,72 +132,119 @@ display_s1, display_m1, display_h1, display_s2, display_m2, display_h2, second);
 	.seg7TensOut (segStopHour2)
 	);
 	
-	always@(posedge clk)
+	reg enable_7seg;
+	reg last_seconds_clk;
+	always@(posedge clk or posedge reset)
 	begin
-		case(state)
-			S_STOPWATCH_HIDE_STOPPED: begin //Shows the current time
-				display_s1 <= segCurrSec1;
-				display_s2 <= segCurrSec1;
-				display_m1 <= segCurrMin1;
-				display_m2 <= segCurrMin2;
-				display_h1 <= segCurrHour1;
-				display_h2 <= segCurrHour2;
+		if(reset) begin
+			enable_7seg <= 1'b1;
+		end
+		else begin
+
+			// Toggle enable_7seg on posedge seconds_clk, for blinking display
+			// as needed at 1Hz 
+			if(seconds_clk !== last_seconds_clk) begin
+				if(seconds_clk == 1'b1) begin
+					enable_7seg <= ~enable_7seg;
+				end
+				last_seconds_clk <= seconds_clk;
 			end
-			
-			S_SET_H: begin	//Shows stopwatch time
-				display_s1 <= segCurrSec1;
-				display_s2 <= segCurrSec1;
-				display_m1 <= segCurrMin1;
-				display_m2 <= segCurrMin2;
-				display_h1 <= segCurrHour1;
-				display_h2 <= segCurrHour2;
-			end
-			
-			S_STOPWATCH_SHOW_STOPPED: begin //Shows stopwatch time
-				display_s1 <= segStopSec1;
-				display_s2 <= segStopSec1;
-				display_m1 <= segStopMin1;
-				display_m2 <= segStopMin2;
-				display_h1 <= segStopHour1;
-				display_h2 <= segStopHour2;
-			end
-			
-			S_STOPWATCH_SHOW_RUNNING: begin //shows stopwatch time
-				display_s1 <= segStopSec1;
-				display_s2 <= segStopSec1;
-				display_m1 <= segStopMin1;
-				display_m2 <= segStopMin2;
-				display_h1 <= segStopHour1;
-				display_h2 <= segStopHour2;
-			end
-			
-			S_STOPWATCH_RESET: begin //shows stopwatch time
-				display_s1 <= segStopSec1;
-				display_s2 <= segStopSec1;
-				display_m1 <= segStopMin1;
-				display_m2 <= segStopMin2;
-				display_h1 <= segStopHour1;
-				display_h2 <= segStopHour2;
-			end
-			
-			S_STOPWATCH_HIDE_RUNNING: begin //shows current time
-				display_s1 <= segCurrSec1;
-				display_s2 <= segCurrSec1;
-				display_m1 <= segCurrMin1;
-				display_m2 <= segCurrMin2;
-				display_h1 <= segCurrHour1;
-				display_h2 <= segCurrHour2;
-			end
-			
-			default: begin //All outputs set to 0 for default case
-				display_s1 <= 0;
-				display_s2 <= 0;
-				display_m1 <= 0;
-				display_m2 <= 0;
-				display_h1 <= 0;
-				display_h2 <= 0;
-			end
-		endcase
+			case(state)
+				S_STOPWATCH_HIDE_STOPPED: begin //Shows the current time
+					display_s1 <= segCurrSec1;
+					display_s2 <= segCurrSec1;
+					display_m1 <= segCurrMin1;
+					display_m2 <= segCurrMin2;
+					display_h1 <= segCurrHour1;
+					display_h2 <= segCurrHour2;
+				end
+				
+				S_SET_M: begin	//Shows current time, blink minutes 
+					display_s1 <= segCurrSec1;
+					display_s2 <= segCurrSec1;
+					display_h1 <= segCurrHour1;
+					display_h2 <= segCurrHour2;
+					if(enable_7_seg) begin
+						display_m1 <= segCurrMin1;
+						display_m2 <= segCurrMin2;
+					end
+					else begin
+						display_m1 <= 7'b0;
+						display_m2 <= 7'b0;
+					end
+				end
+
+				S_SET_H: begin	//Shows current time, blink hours
+					display_s1 <= segCurrSec1;
+					display_s2 <= segCurrSec1;
+					display_m1 <= segCurrMin1;
+					display_m2 <= segCurrMin2;
+					if(enable_7_seg) begin
+						display_h1 <= segCurrHour1;
+						display_h2 <= segCurrHour2;
+					end
+					else begin
+						display_h1 <= 7'b0;
+						display_h2 <= 7'b0;
+					end
+				end
+				
+				S_STOPWATCH_SHOW_STOPPED: begin //Shows stopwatch time, blink it all
+					if(enable_7_seg) begin
+						display_s1 <= segStopSec1;
+						display_s2 <= segStopSec1;
+						display_m1 <= segStopMin1;
+						display_m2 <= segStopMin2;
+						display_h1 <= segStopHour1;
+						display_h2 <= segStopHour2;
+					end
+					else begin
+						display_s1 <= 7'b0;
+						display_s2 <= 7'b0;
+						display_m1 <= 7'b0;
+						display_m2 <= 7'b0;
+						display_h1 <= 7'b0;
+						display_h2 <= 7'b0;
+					end
+				end
+				
+				S_STOPWATCH_SHOW_RUNNING: begin //shows stopwatch time, no blink
+					display_s1 <= segStopSec1;
+					display_s2 <= segStopSec1;
+					display_m1 <= segStopMin1;
+					display_m2 <= segStopMin2;
+					display_h1 <= segStopHour1;
+					display_h2 <= segStopHour2;
+				end
+				
+				S_STOPWATCH_RESET: begin //shows stopwatch time
+					display_s1 <= segStopSec1;
+					display_s2 <= segStopSec1;
+					display_m1 <= segStopMin1;
+					display_m2 <= segStopMin2;
+					display_h1 <= segStopHour1;
+					display_h2 <= segStopHour2;
+				end
+				
+				S_STOPWATCH_HIDE_RUNNING: begin //shows current time, no blink
+					display_s1 <= segCurrSec1;
+					display_s2 <= segCurrSec1;
+					display_m1 <= segCurrMin1;
+					display_m2 <= segCurrMin2;
+					display_h1 <= segCurrHour1;
+					display_h2 <= segCurrHour2;
+				end
+				
+				default: begin //All outputs set to 0 for default case
+					display_s1 <= 0;
+					display_s2 <= 0;
+					display_m1 <= 0;
+					display_m2 <= 0;
+					display_h1 <= 0;
+					display_h2 <= 0;
+				end
+			endcase
+	end
 			
 	end
 endmodule

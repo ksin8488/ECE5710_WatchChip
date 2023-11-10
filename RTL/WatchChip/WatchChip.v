@@ -79,6 +79,7 @@ Digital_Clock	stopwatch(.Clk_1sec(clk_seconds),
 
 // Time display
 Seg7Display		displayer(.clk(clk),
+					.reset(rst),
 					.seconds_clk(clk_seconds),
 					.state(state),
 					.current_s(t_seconds),
