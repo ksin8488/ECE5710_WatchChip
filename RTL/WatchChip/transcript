@@ -356,3 +356,5 @@ restart
 #    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
 run -all
 run -all
+# End time: 03:52:12 on Nov 09,2023, Elapsed time: 0:22:53
+# Errors: 0, Warnings: 11

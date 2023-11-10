@@ -135,66 +135,66 @@ display_s1, display_m1, display_h1, display_s2, display_m2, display_h2, second);
 	begin
 		case(state)
 			S_STOPWATCH_HIDE_STOPPED: begin //Shows the current time
-				display_s1 = segCurrSec1;
-				display_s2 = segCurrSec1;
-				display_m1 = segCurrMin1;
-				display_m2 = segCurrMin2;
-				display_h1 = segCurrHour1;
-				display_h2 = segCurrHour2;
+				display_s1 <= segCurrSec1;
+				display_s2 <= segCurrSec1;
+				display_m1 <= segCurrMin1;
+				display_m2 <= segCurrMin2;
+				display_h1 <= segCurrHour1;
+				display_h2 <= segCurrHour2;
 			end
 			
 			S_SET_H: begin	//Shows stopwatch time
-				display_s1 = segCurrSec1;
-				display_s2 = segCurrSec1;
-				display_m1 = segCurrMin1;
-				display_m2 = segCurrMin2;
-				display_h1 = segCurrHour1;
-				display_h2 = segCurrHour2;
+				display_s1 <= segCurrSec1;
+				display_s2 <= segCurrSec1;
+				display_m1 <= segCurrMin1;
+				display_m2 <= segCurrMin2;
+				display_h1 <= segCurrHour1;
+				display_h2 <= segCurrHour2;
 			end
 			
 			S_STOPWATCH_SHOW_STOPPED: begin //Shows stopwatch time
-				display_s1 = segStopSec1;
-				display_s2 = segStopSec1;
-				display_m1 = segStopMin1;
-				display_m2 = segStopMin2;
-				display_h1 = segStopHour1;
-				display_h2 = segStopHour2;
+				display_s1 <= segStopSec1;
+				display_s2 <= segStopSec1;
+				display_m1 <= segStopMin1;
+				display_m2 <= segStopMin2;
+				display_h1 <= segStopHour1;
+				display_h2 <= segStopHour2;
 			end
 			
 			S_STOPWATCH_SHOW_RUNNING: begin //shows stopwatch time
-				display_s1 = segStopSec1;
-				display_s2 = segStopSec1;
-				display_m1 = segStopMin1;
-				display_m2 = segStopMin2;
-				display_h1 = segStopHour1;
-				display_h2 = segStopHour2;
+				display_s1 <= segStopSec1;
+				display_s2 <= segStopSec1;
+				display_m1 <= segStopMin1;
+				display_m2 <= segStopMin2;
+				display_h1 <= segStopHour1;
+				display_h2 <= segStopHour2;
 			end
 			
 			S_STOPWATCH_RESET: begin //shows stopwatch time
-				display_s1 = segStopSec1;
-				display_s2 = segStopSec1;
-				display_m1 = segStopMin1;
-				display_m2 = segStopMin2;
-				display_h1 = segStopHour1;
-				display_h2 = segStopHour2;
+				display_s1 <= segStopSec1;
+				display_s2 <= segStopSec1;
+				display_m1 <= segStopMin1;
+				display_m2 <= segStopMin2;
+				display_h1 <= segStopHour1;
+				display_h2 <= segStopHour2;
 			end
 			
 			S_STOPWATCH_HIDE_RUNNING: begin //shows current time
-				display_s1 = segCurrSec1;
-				display_s2 = segCurrSec1;
-				display_m1 = segCurrMin1;
-				display_m2 = segCurrMin2;
-				display_h1 = segCurrHour1;
-				display_h2 = segCurrHour2;
+				display_s1 <= segCurrSec1;
+				display_s2 <= segCurrSec1;
+				display_m1 <= segCurrMin1;
+				display_m2 <= segCurrMin2;
+				display_h1 <= segCurrHour1;
+				display_h2 <= segCurrHour2;
 			end
 			
 			default: begin //All outputs set to 0 for default case
-				display_s1 = 0;
-				display_s2 = 0;
-				display_m1 = 0;
-				display_m2 = 0;
-				display_h1 = 0;
-				display_h2 = 0;
+				display_s1 <= 0;
+				display_s2 <= 0;
+				display_m1 <= 0;
+				display_m2 <= 0;
+				display_h1 <= 0;
+				display_h2 <= 0;
 			end
 		endcase
 			
