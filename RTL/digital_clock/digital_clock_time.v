@@ -9,8 +9,7 @@ module Digital_Clock(
     hour_dec,
     seconds,
     minutes,
-    hours
-	);
+    hours);
 
 //What are the Inputs?
     input Clk_1sec;  
@@ -44,42 +43,72 @@ module Digital_Clock(
 					if(hours == 23) begin
 						hours <= 0;
 					end
+
 					else begin
-						hours <= hours + 1;
+						hours = hours + 1;
 					end
 				end
 
-				else begin
-					minutes <= minutes + 1;
-				end
+					else begin
+					minutes = minutes + 1;
+					end
 			 end
 
-			else begin
-				seconds <= seconds + 1; //increment sec
+					else begin
+					seconds = seconds + 1; //increment sec
+					end
+	
+	end
+
+end
+	
+// next else if block for other signal
+			always @(posedge(min_inc)) begin 
+					if(min_inc == 1'b1) begin 
+					minutes = minutes + 1;
+					if(minutes == 60) begin
+					minutes = 0;
+					end
+				end
+
+			end
+// minute decrement
+
+			always @(posedge(min_dec)) begin 
+					if(min_dec == 1'b1) begin 
+					minutes = minutes - 1;
+					if(minutes >= 60) begin
+					minutes = 59;
+					
+					end
+				end
+
 			end
 
-	  end
-	   
-    end
-	always @(posedge(min_inc) or posedge(min_dec) or posedge(hour_inc) or posedge(hour_dec)) begin
-		 if(min_inc == 1'b1) begin
-		    minutes = minutes + 1;
-		//if(minutes == 59)
-			//minutes <= 0;
-		
-	   	 end
-	    	if(min_dec == 1'b1) begin
-		    minutes = minutes - 1;
-		if(minutes == 0)
-			minutes <= 59;
-	    	end
-	    	if(hour_inc == 1'b1) begin
-		    minutes <= hours + 1;
-		if(hours == 24)
-			hours <= 0;
-	    	end
-	    	if(hour_dec == 1'b1) begin
-		    minutes <= hours - 1;
-	    	end
-	end
+	// hour increment		
+			always @(posedge(hour_inc)) begin 
+					if(hour_inc == 1'b1) begin 
+					hours = hours + 1;
+					if(hours >= 24) begin
+					hours = 0;
+					end
+				end
+
+			end
+
+	// hour decrement
+			always @(posedge(hour_dec)) begin 
+					if(hour_dec == 1'b1) begin 
+					hours = hours - 1;
+					if(hours >= 60) begin
+					hours = 23;
+					
+					end
+				end
+
+			end
+
+
+
+
 endmodule
