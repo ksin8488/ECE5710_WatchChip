@@ -1,4 +1,4 @@
-`timescale 1s/1s
+`timescale 100ms/100ms
 
 
 module tb_clock;
@@ -40,18 +40,19 @@ module tb_clock;
     initial min_dec = 0;
     initial hour_inc = 0;
     initial hour_dec = 0;
-    always #1 Clk_1sec = ~Clk_1sec;  //Every sec toggle the clock.
-    always #5 min_inc = ~min_inc; //
+    always #5 Clk_1sec = ~Clk_1sec;  //Every half second toggle the clock.
+    always #50 min_inc = ~min_inc; //
+    always #60 min_dec = ~min_dec; 
+    always #70 hour_inc = ~hour_inc; //
+    always #80 hour_dec = ~hour_dec;
    
     initial begin
         reset = 1;
         clock_enable = 0;
-        // Wait 100 ns for global reset to finish
+        // Wait 100 ms for global reset to finish
         #1; 
         reset = 0; 
-	//clock_enable = 0; 
-	//#1000000000
-	//min_inc = 1;
+	
     end
 
 endmodule
