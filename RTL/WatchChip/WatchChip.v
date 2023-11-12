@@ -55,7 +55,8 @@ watch_fsm		fsm(.clk(clk),
 
 // Timekeeping modules
 wire [5:0] t_seconds, t_minutes, t_hours;
-Digital_Clock	clock(.Clk_1sec(clk_seconds),
+Digital_Clock	clock(.clk(clk),
+					.Clk_1sec(clk_seconds),
 					.reset(rst),
 					.clock_enable(time_enable),
 					.seconds(t_seconds),
@@ -66,7 +67,8 @@ Digital_Clock	clock(.Clk_1sec(clk_seconds),
 					.hour_inc(hour_inc),
 					.hour_dec(hour_dec));
 wire [5:0] sw_seconds, sw_minutes, sw_hours;
-Digital_Clock	stopwatch(.Clk_1sec(clk_seconds),
+Digital_Clock	stopwatch(.clk(clk),
+					.Clk_1sec(clk_seconds),
 					.reset(stopwatch_reset),
 					.clock_enable(stopwatch_enable),
 					.seconds(sw_seconds),

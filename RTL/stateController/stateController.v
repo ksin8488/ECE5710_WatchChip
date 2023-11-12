@@ -49,9 +49,9 @@ parameter S_STOPWATCH_SHOW_RUNNING	= 3'b100;
 parameter S_STOPWATCH_RESET			= 3'b101;
 parameter S_STOPWATCH_HIDE_RUNNING	= 3'b110;
 
-// Combinational next-state logic
+// Next-state logic
 reg [2:0] next_state;
-always @(*) begin
+always @(posedge clk) begin
 	case (state)
 		S_STOPWATCH_HIDE_STOPPED: begin
 			if(btn_mode) next_state <= S_STOPWATCH_SHOW_STOPPED;
@@ -63,13 +63,18 @@ always @(*) begin
 			else next_state <= S_SET_H;
 		end
 		S_SET_M: begin
-			if(btn_time_set) next_state <= S_STOPWATCH_HIDE_STOPPED;
+			if(btn_time_set) begin
+				if(run_stopwatch == 1'b1)
+					next_state <= S_STOPWATCH_HIDE_RUNNING;
+				else
+					next_state <= S_STOPWATCH_HIDE_STOPPED;
+			end
 			else next_state <= S_SET_M;
 		end
 		S_STOPWATCH_SHOW_STOPPED: begin
 			if(btn_increment) next_state <= S_STOPWATCH_SHOW_RUNNING; //start stopwatch
-			else if(btn_mode) next_state <= S_STOPWATCH_HIDE_STOPPED; //hide stopped stopwatch
 			else if(btn_decrement) next_state <= S_STOPWATCH_RESET;
+			else if(btn_mode) next_state <= S_STOPWATCH_HIDE_STOPPED; //hide stopped stopwatch
 			else next_state <= S_STOPWATCH_SHOW_STOPPED;
 		end
 		S_STOPWATCH_SHOW_RUNNING: begin

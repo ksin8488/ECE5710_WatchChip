@@ -3,6 +3,22 @@ K4
 z2
 Z0 !s99 nomlopt
 R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
 !s11f vlog 2021.2 2021.04, Apr 14 2021
 13
 !s112 1.1
@@ -12,17 +28,17 @@ R0
 cModel Technology
 Z1 d/home/ella/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip
 T_opt
-!s110 1699525913
-VjL6LQFdPV1hZ6CAD[W5>g1
+!s110 1699813110
+VGUXGR@@f3LI^9R00AEDZd1
 04 11 4 work WatchChipTb fast 0
-=4-000ae431a4f1-654cb519-8d655-3d3e
-!s124 OEM10U12 
+=16-000ae431a4f1-655116f6-58f87-319f
+!s124 OEM10U21 
 o-quiet -auto_acc_if_foreign -work work +acc
 Z2 tCvgOpt 0
 n@_opt
 OL;O;2021.2;73
 vbacklight_controller
-Z3 !s110 1699525541
+Z3 !s110 1699812757
 !i10b 1
 !s100 Jzd]f<kCKhTYQiLdc6lH00
 IzoINbToFdg;ObzF;V5?9m2
@@ -30,40 +46,63 @@ R1
 w1699525372
 8/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlight.v
 F/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlight.v
-!i122 6
+!i122 86
 L0 1 44
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 Z5 OL;L;2021.2;73
 r1
 !s85 0
 31
-Z6 !s108 1699525541.000000
+Z6 !s108 1699812757.000000
 !s107 /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlight.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlight.v|
 !i113 0
 Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R2
+vbcdToSeg7
+R3
+!i10b 1
+!s100 i;oc[fU37RCiY^E3eZ9hO2
+IhbYX?UzZlHNP<lhVC^9lh3
+R1
+w1699578579
+8/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/7seg/bcdToSeg7.v
+F/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/7seg/bcdToSeg7.v
+!i122 90
+L0 1 41
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/7seg/bcdToSeg7.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/7seg/bcdToSeg7.v|
+!i113 0
+R7
+R2
+nbcd@to@seg7
 vbinToBCD
-!s110 1699525702
+R3
 !i10b 1
 !s100 =TB5:4A[Sgz=ClSKfefMo2
-IF=S;8oBJln:3GnejK2FgF1
+I;]1F2j9PDG=l0chA>81F83
 R1
 w1699523504
-8../7seg/binToBCD.v
-F../7seg/binToBCD.v
-!i122 12
+8/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/7seg/binToBCD.v
+F/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/7seg/binToBCD.v
+!i122 85
 L0 1 28
 R4
 R5
 r1
 !s85 0
 31
-!s108 1699525702.000000
-!s107 ../7seg/binToBCD.v|
-!s90 -reportprogress|300|../7seg/binToBCD.v|
+R6
+!s107 /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/7seg/binToBCD.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/7seg/binToBCD.v|
 !i113 0
-Z8 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R7
 R2
 nbin@to@b@c@d
 vclk_divider
@@ -75,7 +114,7 @@ R1
 w1699420358
 8/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/clk_divider/clk_divider.v
 F/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/clk_divider/clk_divider.v
-!i122 7
+!i122 87
 L0 5 24
 R4
 R5
@@ -91,14 +130,14 @@ R2
 vDigital_Clock
 R3
 !i10b 1
-!s100 PE5EB7;RTj][S[IAd@aY33
-I3j>Y54IHF_zG9>hU7ANPj2
+!s100 _[zTcC4AQd8U3a^d0UQBX2
+IJ_PbGo4Acf05H;hbO=S921
 R1
-w1699525156
+w1699811697
 8/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v
 F/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v
-!i122 8
-L0 2 65
+!i122 88
+L0 1 109
 R4
 R5
 r1
@@ -112,93 +151,93 @@ R7
 R2
 n@digital_@clock
 vSeg7Display
-!s110 1699525758
-!i10b 1
-!s100 NdfA_SKQ2g_O8dBZOT0i?1
-IFHfMejm493WfGaljDC:nW1
-R1
-w1699525755
-8../7seg/Seg7Display.v
-F../7seg/Seg7Display.v
-!i122 14
-L0 7 83
-R4
-R5
-r1
-!s85 0
-31
-!s108 1699525758.000000
-!s107 ../7seg/Seg7Display.v|
-!s90 -reportprogress|300|../7seg/Seg7Display.v|
-!i113 0
-R8
-R2
-n@seg7@display
-vwatch_fsm
 R3
 !i10b 1
-!s100 aBO[SV6DG><O?96TV]?DS3
-I]1m;X=PTmn6hW;LI4KY>T3
+!s100 kJaETog3:ghPelEiO]UGO0
+Iz88U6IfO2Inj3dM[JR6@f3
 R1
-w1699416994
-8/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/stateController/stateController.v
-F/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/stateController/stateController.v
-!i122 9
-L0 26 162
+w1699807653
+8/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/7seg/Seg7Dsiplay.v
+F/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/7seg/Seg7Dsiplay.v
+!i122 89
+L0 7 244
 R4
 R5
 r1
 !s85 0
 31
 R6
+!s107 /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/7seg/Seg7Dsiplay.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/7seg/Seg7Dsiplay.v|
+!i113 0
+R7
+R2
+n@seg7@display
+vwatch_fsm
+!s110 1699813108
+!i10b 1
+!s100 E;mPa[Ecg<GT7kbzXKPFW1
+I9QP_S<WB7<9F0jbc58fEI1
+R1
+w1699813077
+8/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/stateController/stateController.v
+F/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/stateController/stateController.v
+!i122 94
+L0 26 167
+R4
+R5
+r1
+!s85 0
+31
+Z8 !s108 1699813107.000000
 !s107 /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/stateController/stateController.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/stateController/stateController.v|
 !i113 0
 R7
 R2
 vWatchChip
-!s110 1699525642
+!s110 1699813107
 !i10b 1
-!s100 iccHdiW7L]B_3JVedWfmc0
-IzUiQXB?M35Q_DUl`B3Znk3
+!s100 35AlO_OoA:e_PT_mSS>OK2
+INn3HkUXbY1d5`5SemJ1m80
 R1
-w1699525640
-8WatchChip.v
-FWatchChip.v
-!i122 11
-L0 8 96
+w1699813095
+8/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v
+F/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v
+!i122 93
+L0 8 99
 R4
 R5
 r1
 !s85 0
 31
-!s108 1699525641.000000
-!s107 WatchChip.v|
-!s90 -reportprogress|300|WatchChip.v|
-!i113 0
 R8
+!s107 /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v|
+!i113 0
+R7
 R2
 n@watch@chip
 vWatchChipTb
-!s110 1699525909
+R3
 !i10b 1
-!s100 z5_mKG]nOoz6RFdJ6@0Bz0
-I>2<YZzEJY;@U[PWRkX0Lo0
+!s100 k]ZYnBQbY1X1TWVBLBa=Y2
+IH`H7co;X3o998>cZGlagC2
 R1
-w1699525899
-8WatchChip_tb.v
-FWatchChip_tb.v
-!i122 15
-L0 7 39
+w1699812674
+8/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip_tb.v
+F/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip_tb.v
+!i122 84
+L0 7 117
 R4
 R5
 r1
 !s85 0
 31
-!s108 1699525909.000000
-!s107 WatchChip_tb.v|
-!s90 -reportprogress|300|WatchChip_tb.v|
+R6
+!s107 /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip_tb.v|
 !i113 0
-R8
+R7
 R2
 n@watch@chip@tb

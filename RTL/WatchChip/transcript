@@ -12,189 +12,50 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# vsim . 
-# Start time: 03:24:30 on Nov 09,2023
-# ** Error (suppressible): (vsim-19) Failed to access library '' at "".
-# No such file or directory. (errno = ENOENT)
-# Error loading design
-# End time: 03:24:31 on Nov 09,2023, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
+# OpenFile WatchChip.mpf
 # Loading project WatchChip
 # Compile of WatchChip.v was successful.
 # Compile of WatchChip_tb.v was successful.
 # Compile of binToBCD.v was successful.
-# Compile of Seg7Display.v was successful with warnings.
 # Compile of backlight.v was successful.
 # Compile of clk_divider.v was successful.
-# Compile of digital_clock_time.v was successful with warnings.
+# Compile of digital_clock_time.v failed with 3 errors.
 # Compile of stateController.v was successful.
-# 8 compiles, 0 failed with no errors.
-vsim work.WatchChipTb -voptargs=+acc
-# vsim work.WatchChipTb -voptargs="+acc" 
-# Start time: 03:26:07 on Nov 09,2023
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Error (suppressible): /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v(99): (vopt-8884) Illegal output port connection for 'light' (4th connection) to reg type. 
-# ** Error (suppressible): /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/7seg/Seg7Display.v(49): (vopt-8884) Illegal output port connection for 'BCD' (2nd connection) to reg type. 
-# ** Error (suppressible): /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/7seg/Seg7Display.v(44): (vopt-8884) Illegal output port connection for 'BCD' (2nd connection) to reg type. 
-# ** Error (suppressible): /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/7seg/Seg7Display.v(39): (vopt-8884) Illegal output port connection for 'BCD' (2nd connection) to reg type. 
-# ** Error (suppressible): /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v(81): (vopt-8884) Illegal output port connection for 'display_s2' (10th connection) to reg type. 
-# ** Error (suppressible): /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v(81): (vopt-8884) Illegal output port connection for 'display_s1' (11th connection) to reg type. 
-# ** Error (suppressible): /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v(81): (vopt-8884) Illegal output port connection for 'display_m2' (12th connection) to reg type. 
-# ** Error (suppressible): /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v(81): (vopt-8884) Illegal output port connection for 'display_m1' (13th connection) to reg type. 
-# ** Error (suppressible): /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v(81): (vopt-8884) Illegal output port connection for 'display_h2' (14th connection) to reg type. 
-# ** Error (suppressible): /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v(81): (vopt-8884) Illegal output port connection for 'display_h1' (15th connection) to reg type. 
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=10, Warnings=0.
-# Error loading design
-# End time: 03:26:07 on Nov 09,2023, Elapsed time: 0:00:00
-# Errors: 10, Warnings: 11
-vlog WatchChip.v
+# Compile of Seg7Dsiplay.v was successful.
+# Compile of bcdToSeg7.v was successful.
+# 9 compiles, 1 failed with 3 errors.
+vlog ../digital_clock/digital_clock_time.v
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 03:26:40 on Nov 09,2023
-# vlog -reportprogress 300 WatchChip.v 
-# -- Compiling module WatchChip
+# Start time: 10:06:24 on Nov 12,2023
+# vlog -reportprogress 300 ../digital_clock/digital_clock_time.v 
+# -- Compiling module Digital_Clock
+# ** Error (suppressible): ../digital_clock/digital_clock_time.v(32): (vlog-13299) Undefined variable: 'clk'.
+# ** Error: ../digital_clock/digital_clock_time.v(2): (vlog-2730) Undefined variable: 'clk'.
+# ** Error: ../digital_clock/digital_clock_time.v(2): (vlog-13294) Identifier must be declared with a port mode: clk.
+# End time: 10:06:24 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# /home/ella/intelFPGA_lite/22.1std/questa_fse/linux_x86_64/vlog failed.
+vlog ../digital_clock/digital_clock_time.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 10:06:52 on Nov 12,2023
+# vlog -reportprogress 300 ../digital_clock/digital_clock_time.v 
+# -- Compiling module Digital_Clock
 # 
 # Top level modules:
-# 	WatchChip
-# End time: 03:26:40 on Nov 09,2023, Elapsed time: 0:00:00
+# 	Digital_Clock
+# End time: 10:06:52 on Nov 12,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim work.WatchChipTb -voptargs=+acc
-# vsim work.WatchChipTb -voptargs="+acc" 
-# Start time: 03:26:43 on Nov 09,2023
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Error (suppressible): /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/7seg/Seg7Display.v(49): (vopt-8884) Illegal output port connection for 'BCD' (2nd connection) to reg type. 
-# ** Error (suppressible): /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/7seg/Seg7Display.v(44): (vopt-8884) Illegal output port connection for 'BCD' (2nd connection) to reg type. 
-# ** Error (suppressible): /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/7seg/Seg7Display.v(39): (vopt-8884) Illegal output port connection for 'BCD' (2nd connection) to reg type. 
-# ** Error (suppressible): WatchChip.v(81): (vopt-8884) Illegal output port connection for 'display_s2' (10th connection) to reg type. 
-# ** Error (suppressible): WatchChip.v(81): (vopt-8884) Illegal output port connection for 'display_s1' (11th connection) to reg type. 
-# ** Error (suppressible): WatchChip.v(81): (vopt-8884) Illegal output port connection for 'display_m2' (12th connection) to reg type. 
-# ** Error (suppressible): WatchChip.v(81): (vopt-8884) Illegal output port connection for 'display_m1' (13th connection) to reg type. 
-# ** Error (suppressible): WatchChip.v(81): (vopt-8884) Illegal output port connection for 'display_h2' (14th connection) to reg type. 
-# ** Error (suppressible): WatchChip.v(81): (vopt-8884) Illegal output port connection for 'display_h1' (15th connection) to reg type. 
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=9, Warnings=0.
-# Error loading design
-# End time: 03:26:43 on Nov 09,2023, Elapsed time: 0:00:00
-# Errors: 9, Warnings: 1
-vlog WatchChip.v
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 03:27:21 on Nov 09,2023
-# vlog -reportprogress 300 WatchChip.v 
-# -- Compiling module WatchChip
-# 
-# Top level modules:
-# 	WatchChip
-# End time: 03:27:22 on Nov 09,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vsim work.WatchChipTb -voptargs=+acc
-# vsim work.WatchChipTb -voptargs="+acc" 
-# Start time: 03:27:22 on Nov 09,2023
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Error (suppressible): /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/7seg/Seg7Display.v(49): (vopt-8884) Illegal output port connection for 'BCD' (2nd connection) to reg type. 
-# ** Error (suppressible): /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/7seg/Seg7Display.v(44): (vopt-8884) Illegal output port connection for 'BCD' (2nd connection) to reg type. 
-# ** Error (suppressible): /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/7seg/Seg7Display.v(39): (vopt-8884) Illegal output port connection for 'BCD' (2nd connection) to reg type. 
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=3, Warnings=0.
-# Error loading design
-# End time: 03:27:23 on Nov 09,2023, Elapsed time: 0:00:01
-# Errors: 3, Warnings: 1
-vlog ../7seg/binToBCD.v
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 03:28:22 on Nov 09,2023
-# vlog -reportprogress 300 ../7seg/binToBCD.v 
-# -- Compiling module binToBCD
-# 
-# Top level modules:
-# 	binToBCD
-# End time: 03:28:22 on Nov 09,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.WatchChipTb -voptargs=+acc
-# vsim work.WatchChipTb -voptargs="+acc" 
-# Start time: 03:28:24 on Nov 09,2023
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Error (suppressible): /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/7seg/Seg7Display.v(49): (vopt-8884) Illegal output port connection for 'BCD' (2nd connection) to reg type. 
-# ** Error (suppressible): /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/7seg/Seg7Display.v(44): (vopt-8884) Illegal output port connection for 'BCD' (2nd connection) to reg type. 
-# ** Error (suppressible): /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/7seg/Seg7Display.v(39): (vopt-8884) Illegal output port connection for 'BCD' (2nd connection) to reg type. 
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=3, Warnings=0.
-# Error loading design
-# End time: 03:28:24 on Nov 09,2023, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 1
-vlog ../7seg/Seg7Display.v
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 03:28:59 on Nov 09,2023
-# vlog -reportprogress 300 ../7seg/Seg7Display.v 
-# -- Compiling module Seg7Display
-# ** Warning: ../7seg/Seg7Display.v(28): (vlog-2608) Keyword "unsigned" not allowed here in Verilog 2001.
-# ** Warning: ../7seg/Seg7Display.v(29): (vlog-2608) Keyword "unsigned" not allowed here in Verilog 2001.
-# ** Warning: ../7seg/Seg7Display.v(30): (vlog-2608) Keyword "unsigned" not allowed here in Verilog 2001.
-# 
-# Top level modules:
-# 	Seg7Display
-# End time: 03:28:59 on Nov 09,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 3
-vlog ../7seg/Seg7Display.v
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 03:29:18 on Nov 09,2023
-# vlog -reportprogress 300 ../7seg/Seg7Display.v 
-# -- Compiling module Seg7Display
-# 
-# Top level modules:
-# 	Seg7Display
-# End time: 03:29:18 on Nov 09,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.WatchChipTb -voptargs=+acc
-# vsim work.WatchChipTb -voptargs="+acc" 
-# Start time: 03:29:19 on Nov 09,2023
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(24): (vopt-2608) Keyword "unsigned" not allowed here in Verilog 2001.
-# ** Warning: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(25): (vopt-2608) Keyword "unsigned" not allowed here in Verilog 2001.
-# ** Warning: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(26): (vopt-2608) Keyword "unsigned" not allowed here in Verilog 2001.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
-# Loading work.WatchChipTb(fast)
-# Loading work.WatchChip(fast)
-# Loading work.clk_divider(fast)
-# Loading work.watch_fsm(fast)
-# Loading work.Digital_Clock(fast)
-# Loading work.Seg7Display(fast)
-# Loading work.binToBCD(fast)
-# Loading work.backlight_controller(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'h1'. The port definition is at: WatchChip.v(16).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip_tb.v Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'h0'. The port definition is at: WatchChip.v(17).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip_tb.v Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'm1'. The port definition is at: WatchChip.v(18).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip_tb.v Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'm0'. The port definition is at: WatchChip.v(19).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip_tb.v Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 's1'. The port definition is at: WatchChip.v(20).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip_tb.v Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 's0'. The port definition is at: WatchChip.v(21).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip_tb.v Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: WatchChip.v Line: 69
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(7).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: WatchChip.v Line: 69
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(8).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: WatchChip.v Line: 69
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: WatchChip.v Line: 69
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_s1'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_m1'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_h1'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_s2'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_m2'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_h2'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
 restart; run -all
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# No Design Loaded!
+vsim work.WatchChipTb -voptargs=+acc
+# vsim work.WatchChipTb -voptargs="+acc" 
+# Start time: 10:07:00 on Nov 12,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v(58): (vopt-2685) [TFMPC] - Too few port connections for 'clock'.  Expected 11, found 10.
+# ** Warning: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v(58): (vopt-2718) [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v(69): (vopt-2685) [TFMPC] - Too few port connections for 'stopwatch'.  Expected 11, found 10.
+# ** Warning: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v(69): (vopt-2718) [TFMPC] - Missing connection for port 'clk'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=4.
 # Loading work.WatchChipTb(fast)
 # Loading work.WatchChip(fast)
 # Loading work.clk_divider(fast)
@@ -202,95 +63,28 @@ restart; run -all
 # Loading work.Digital_Clock(fast)
 # Loading work.Seg7Display(fast)
 # Loading work.binToBCD(fast)
+# Loading work.bcdToSeg7(fast)
 # Loading work.backlight_controller(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'h1'. The port definition is at: WatchChip.v(16).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip_tb.v Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'h0'. The port definition is at: WatchChip.v(17).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip_tb.v Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'm1'. The port definition is at: WatchChip.v(18).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip_tb.v Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'm0'. The port definition is at: WatchChip.v(19).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip_tb.v Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 's1'. The port definition is at: WatchChip.v(20).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip_tb.v Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 's0'. The port definition is at: WatchChip.v(21).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip_tb.v Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: WatchChip.v Line: 69
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(7).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: WatchChip.v Line: 69
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(8).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: WatchChip.v Line: 69
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: WatchChip.v Line: 69
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_s1'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_m1'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_h1'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_s2'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_m2'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_h2'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-add wave -position insertpoint sim:/WatchChipTb/*
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
-# Loading work.WatchChipTb(fast)
-# Loading work.WatchChip(fast)
-# Loading work.clk_divider(fast)
-# Loading work.watch_fsm(fast)
-# Loading work.Digital_Clock(fast)
-# Loading work.Seg7Display(fast)
-# Loading work.binToBCD(fast)
-# Loading work.backlight_controller(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'h1'. The port definition is at: WatchChip.v(16).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip_tb.v Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'h0'. The port definition is at: WatchChip.v(17).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip_tb.v Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'm1'. The port definition is at: WatchChip.v(18).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip_tb.v Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'm0'. The port definition is at: WatchChip.v(19).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip_tb.v Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 's1'. The port definition is at: WatchChip.v(20).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip_tb.v Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 's0'. The port definition is at: WatchChip.v(21).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip_tb.v Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: WatchChip.v Line: 69
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(7).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: WatchChip.v Line: 69
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(8).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: WatchChip.v Line: 69
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: WatchChip.v Line: 69
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_s1'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_m1'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_h1'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_s2'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_m2'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_h2'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_inc'. The port definition is at: ../digital_clock/digital_clock_time.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 69
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_dec'. The port definition is at: ../digital_clock/digital_clock_time.v(7).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 69
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_inc'. The port definition is at: ../digital_clock/digital_clock_time.v(8).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 69
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_dec'. The port definition is at: ../digital_clock/digital_clock_time.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 69
+add wave -position insertpoint sim:/WatchChipTb/watch/*
 run -all
-vlog WatchChip_tb.v
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 03:31:49 on Nov 09,2023
-# vlog -reportprogress 300 WatchChip_tb.v 
-# -- Compiling module WatchChipTb
-# 
-# Top level modules:
-# 	WatchChipTb
-# End time: 03:31:49 on Nov 09,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# Compile of WatchChip.v was successful.
+# Compile of WatchChip_tb.v was successful.
+# Compile of binToBCD.v was successful.
+# Compile of backlight.v was successful.
+# Compile of clk_divider.v was successful.
+# Compile of digital_clock_time.v was successful.
+# Compile of stateController.v was successful.
+# Compile of Seg7Dsiplay.v was successful.
+# Compile of bcdToSeg7.v was successful.
+# 9 compiles, 0 failed with no errors.
 restart; run -all
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
@@ -301,27 +95,58 @@ restart; run -all
 # Loading work.Digital_Clock(fast)
 # Loading work.Seg7Display(fast)
 # Loading work.binToBCD(fast)
+# Loading work.bcdToSeg7(fast)
 # Loading work.backlight_controller(fast)
 # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: WatchChip.v Line: 69
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 69
 # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(7).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: WatchChip.v Line: 69
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 69
 # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(8).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: WatchChip.v Line: 69
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 69
 # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: WatchChip.v Line: 69
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_s1'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_m1'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_h1'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_s2'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_m2'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_h2'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 69
+# Compile of WatchChip_tb.v was successful.
+restart; run -all
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.WatchChipTb(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Seg7Display(fast)
+# Loading work.binToBCD(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 69
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(7).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 69
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(8).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 69
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 69
+# Compile of digital_clock_time.v was successful.
+restart; run -all
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.WatchChipTb(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Seg7Display(fast)
+# Loading work.binToBCD(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 69
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(7).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 69
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(8).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 69
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 69
 add wave -position insertpoint sim:/WatchChipTb/watch/clock/*
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
@@ -333,28 +158,322 @@ restart
 # Loading work.Digital_Clock(fast)
 # Loading work.Seg7Display(fast)
 # Loading work.binToBCD(fast)
+# Loading work.bcdToSeg7(fast)
 # Loading work.backlight_controller(fast)
 # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: WatchChip.v Line: 69
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 69
 # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(7).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: WatchChip.v Line: 69
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 69
 # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(8).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: WatchChip.v Line: 69
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 69
 # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: WatchChip.v Line: 69
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_s1'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_m1'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_h1'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_s2'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_m2'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (7) for port 'display_h2'. The port definition is at: ../7seg/Seg7Display.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/displayer File: WatchChip.v Line: 81
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 69
 run -all
+# Compile of digital_clock_time.v was successful.
+restart; run -all
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.WatchChipTb(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Seg7Display(fast)
+# Loading work.binToBCD(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 69
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(7).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 69
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(8).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 69
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 69
+# Compile of WatchChip.v was successful.
+# Compile of WatchChip_tb.v was successful.
+# Compile of binToBCD.v was successful.
+# Compile of backlight.v was successful.
+# Compile of clk_divider.v was successful.
+# Compile of digital_clock_time.v was successful.
+# Compile of stateController.v was successful.
+# Compile of Seg7Dsiplay.v was successful.
+# Compile of bcdToSeg7.v was successful.
+# 9 compiles, 0 failed with no errors.
+restart; run -all
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v(70): (vopt-2685) [TFMPC] - Too few port connections for 'stopwatch'.  Expected 11, found 10.
+# ** Warning: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v(70): (vopt-2718) [TFMPC] - Missing connection for port 'clk'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.WatchChipTb(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Digital_Clock(fast__1)
+# Loading work.Seg7Display(fast)
+# Loading work.binToBCD(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(7).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(8).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
 run -all
-# End time: 03:52:12 on Nov 09,2023, Elapsed time: 0:22:53
-# Errors: 0, Warnings: 11
+# Compile of WatchChip.v was successful.
+# Compile of WatchChip_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart; run -all
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.WatchChipTb(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Digital_Clock(fast__1)
+# Loading work.Seg7Display(fast)
+# Loading work.binToBCD(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(7).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(8).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# Compile of stateController.v was successful.
+restart; run -all
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.WatchChipTb(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Digital_Clock(fast__1)
+# Loading work.Seg7Display(fast)
+# Loading work.binToBCD(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(7).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(8).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# Compile of stateController.v was successful.
+restart; run -all
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.WatchChipTb(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Digital_Clock(fast__1)
+# Loading work.Seg7Display(fast)
+# Loading work.binToBCD(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(7).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(8).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# Compile of WatchChip_tb.v was successful.
+# Compile of stateController.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart; run -all
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.WatchChipTb(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Digital_Clock(fast__1)
+# Loading work.Seg7Display(fast)
+# Loading work.binToBCD(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(7).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(8).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# Compile of WatchChip.v was successful.
+# Compile of WatchChip_tb.v was successful.
+# Compile of binToBCD.v was successful.
+# Compile of backlight.v was successful.
+# Compile of clk_divider.v was successful.
+# Compile of digital_clock_time.v was successful.
+# Compile of stateController.v was successful.
+# Compile of Seg7Dsiplay.v was successful.
+# Compile of bcdToSeg7.v was successful.
+# 9 compiles, 0 failed with no errors.
+restart; run -all
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.WatchChipTb(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Digital_Clock(fast__1)
+# Loading work.Seg7Display(fast)
+# Loading work.binToBCD(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(7).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(8).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# Compile of WatchChip.v was successful.
+# Compile of WatchChip_tb.v was successful.
+# Compile of binToBCD.v was successful.
+# Compile of backlight.v was successful.
+# Compile of clk_divider.v was successful.
+# Compile of digital_clock_time.v was successful.
+# Compile of stateController.v failed with 2 errors.
+# Compile of Seg7Dsiplay.v was successful.
+# Compile of bcdToSeg7.v was successful.
+# 9 compiles, 1 failed with 2 errors.
+vlog ../stateController/stateController.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:12:49 on Nov 12,2023
+# vlog -reportprogress 300 ../stateController/stateController.v 
+# -- Compiling module watch_fsm
+# ** Error: (vlog-13069) ../stateController/stateController.v(55): near "posedge": syntax error, unexpected posedge, expecting or or ')' or ','.
+# ** Error: ../stateController/stateController.v(106): (vlog-13205) Syntax error found in the scope following 'run_time'. Is there a missing '::'?
+# End time: 11:12:49 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# /home/ella/intelFPGA_lite/22.1std/questa_fse/linux_x86_64/vlog failed.
+vlog ../stateController/stateController.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:14:45 on Nov 12,2023
+# vlog -reportprogress 300 ../stateController/stateController.v 
+# -- Compiling module watch_fsm
+# 
+# Top level modules:
+# 	watch_fsm
+# End time: 11:14:45 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.WatchChipTb(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Digital_Clock(fast__1)
+# Loading work.Seg7Display(fast)
+# Loading work.binToBCD(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(7).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(8).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+vlog ../stateController/stateController.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:15:08 on Nov 12,2023
+# vlog -reportprogress 300 ../stateController/stateController.v 
+# -- Compiling module watch_fsm
+# 
+# Top level modules:
+# 	watch_fsm
+# End time: 11:15:08 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.WatchChipTb(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Digital_Clock(fast__1)
+# Loading work.Seg7Display(fast)
+# Loading work.binToBCD(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(7).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(8).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+add wave -position insertpoint sim:/WatchChipTb/watch/stopwatch/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.WatchChipTb(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Digital_Clock(fast__1)
+# Loading work.Seg7Display(fast)
+# Loading work.binToBCD(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(7).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(8).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+run -all
+# Compile of WatchChip.v was successful.
+# Compile of stateController.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.WatchChipTb(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Seg7Display(fast)
+# Loading work.binToBCD(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(6).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'min_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(7).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_inc'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(8).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'hour_dec'. The port definition is at: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/digital_clock/digital_clock_time.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /WatchChipTb/watch/stopwatch File: /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/WatchChip/WatchChip.v Line: 70
+run -all

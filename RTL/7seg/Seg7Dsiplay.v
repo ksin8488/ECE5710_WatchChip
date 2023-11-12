@@ -28,27 +28,27 @@ display_s1, display_m1, display_h1, display_s2, display_m2, display_h2, second);
 	
 	//---Registers for internal use---
 	//BCD values stored
-	reg [7:0] bcdCurrSec;
-	reg [7:0] bcdCurrMin;
-	reg [7:0] bcdCurrHour;
-	reg [7:0] bcdStopSec;
-	reg [7:0] bcdStopMin;
-	reg [7:0] bcdStopHour;
+	wire [7:0] bcdCurrSec;
+	wire [7:0] bcdCurrMin;
+	wire [7:0] bcdCurrHour;
+	wire [7:0] bcdStopSec;
+	wire [7:0] bcdStopMin;
+	wire [7:0] bcdStopHour;
 	//Seven-Segment values stored
 	//Current
-	reg[6:0] segCurrSec1;
-	reg[6:0]	segCurrSec2;
-	reg[6:0] segCurrMin1;
-	reg[6:0]	segCurrMin2;
-	reg[6:0]	segCurrHour1;
-	reg[6:0]	segCurrHour2;
+	wire[6:0] segCurrSec1;
+	wire[6:0]	segCurrSec2;
+	wire[6:0] segCurrMin1;
+	wire[6:0]	segCurrMin2;
+	wire[6:0]	segCurrHour1;
+	wire[6:0]	segCurrHour2;
 	//Stopwatch
-	reg[6:0] segStopSec1;
-	reg[6:0]	segStopSec2;
-	reg[6:0] segStopMin1;
-	reg[6:0]	segStopMin2;
-	reg[6:0]	segStopHour1;
-	reg[6:0]	segStopHour2;
+	wire[6:0] segStopSec1;
+	wire[6:0]	segStopSec2;
+	wire[6:0] segStopMin1;
+	wire[6:0]	segStopMin2;
+	wire[6:0]	segStopHour1;
+	wire[6:0]	segStopHour2;
 	
 	//---Parameters for different State settings from watch_fsm module output---
 	parameter S_STOPWATCH_HIDE_STOPPED	= 3'b000; //Stopwatch is stopped and hidden from view
@@ -164,7 +164,7 @@ display_s1, display_m1, display_h1, display_s2, display_m2, display_h2, second);
 					display_s2 <= segCurrSec1;
 					display_h1 <= segCurrHour1;
 					display_h2 <= segCurrHour2;
-					if(enable_7_seg) begin
+					if(enable_7seg) begin
 						display_m1 <= segCurrMin1;
 						display_m2 <= segCurrMin2;
 					end
@@ -179,7 +179,7 @@ display_s1, display_m1, display_h1, display_s2, display_m2, display_h2, second);
 					display_s2 <= segCurrSec1;
 					display_m1 <= segCurrMin1;
 					display_m2 <= segCurrMin2;
-					if(enable_7_seg) begin
+					if(enable_7seg) begin
 						display_h1 <= segCurrHour1;
 						display_h2 <= segCurrHour2;
 					end
@@ -190,7 +190,7 @@ display_s1, display_m1, display_h1, display_s2, display_m2, display_h2, second);
 				end
 				
 				S_STOPWATCH_SHOW_STOPPED: begin //Shows stopwatch time, blink it all
-					if(enable_7_seg) begin
+					if(enable_7seg) begin
 						display_s1 <= segStopSec1;
 						display_s2 <= segStopSec1;
 						display_m1 <= segStopMin1;
