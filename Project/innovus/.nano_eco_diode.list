@@ -1,0 +1,21 @@
+FORMATVERSION 1
+ADDINST ANTENNA chip_displayer/DIODE_1 1 addPortAsNeeded
+INSTTERM A m0_PAD_0 -
+ADDINST ANTENNA chip_displayer/DIODE_2 1 addPortAsNeeded
+INSTTERM A m0_PAD_4 -
+ADDINST ANTENNA chip_displayer/DIODE_3 1 addPortAsNeeded
+INSTTERM A h0_PAD_5 -
+ADDINST ANTENNA chip_displayer/DIODE_4 1 addPortAsNeeded
+INSTTERM A m1_PAD_3 -
+ADDINST ANTENNA chip_displayer/DIODE_5 1 addPortAsNeeded
+INSTTERM A m1_PAD_1 -
+ADDINST ANTENNA chip_displayer/DIODE_6 1 addPortAsNeeded
+INSTTERM A s0_PAD_3 -
+ADDINST ANTENNA chip_displayer/DIODE_7 1 addPortAsNeeded
+INSTTERM A h0_PAD_1 -
+ADDINST ANTENNA chip_displayer/DIODE_8 1 addPortAsNeeded
+INSTTERM A h0_PAD_3 -
+ADDINST ANTENNA DIODE_9 1 addPortAsNeeded
+INSTTERM A FE_DBTN1_reset_PAD -
+ADDINST ANTENNA DIODE_10 1 addPortAsNeeded
+INSTTERM A FE_DBTN1_reset_PAD -

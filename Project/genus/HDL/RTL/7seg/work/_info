@@ -1,0 +1,151 @@
+m255
+K4
+z2
+!s11f vlog 2019.4 2019.10, Oct 15 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/u1224540/5710/Project/genus/HDL/RTL/7seg
+vbin2bcd
+Z1 !s110 1701214730
+!i10b 1
+!s100 8^ol8AQ2o@e5V=kIFSUOG1
+!s11b <e@Z3^S=md9mFNHgCd8e@1
+IT2n;`RUF6QMhAkfdR9=^51
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1701214729
+Z4 8dabble.v
+Z5 Fdabble.v
+!i122 -1
+L0 7
+Z6 OL;L;2019.4;69
+r1
+!s85 0
+31
+Z7 !s108 1701214730.000000
+Z8 !s107 dabble.v|
+Z9 !s90 dabble.v|
+!i113 0
+Z10 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 tCvgOpt 0
+vbinToBCD
+!s110 1701212974
+!i10b 1
+!s100 :deE9[e>TO9KDUBOmZI_90
+!s11b >PZDOMZAN;VJPjNbNi>om0
+I?@U:1ib`Ff[9W3F9z:SS;1
+R2
+R0
+w1701212972
+8binToBCD.v
+FbinToBCD.v
+!i122 -1
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1701212974.000000
+!s107 binToBCD.v|
+!s90 binToBCD.v|
+!i113 0
+R10
+R11
+nbin@to@b@c@d
+vdd_ctrl
+R1
+!i10b 1
+!s100 c_PhJbJz^hc@LgAzoGYcm2
+!s11b I_5PcgVP`>OEAz3Bm4;Bc1
+IVMoW>4P1?94Q9lj?2^KIe3
+R2
+R0
+R3
+R4
+R5
+!i122 -1
+L0 82
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+vdd_incoming
+R1
+!i10b 1
+!s100 c5OGV5Si8V6OV=jZ4JzHK3
+!s11b jIazH_1dHFCczzTDRDCO^0
+IFZPAbD9`@SiQ<:QFT]5;S0
+R2
+R0
+R3
+R4
+R5
+!i122 -1
+L0 43
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+vlatch
+R1
+!i10b 1
+!s100 eClhS0zhkbnbhnGN:cWBT1
+!s11b O4hai4X=LUK;iRfOXA7WN1
+I:e?EMHjlTNFGb@E:7:SJz0
+R2
+R0
+R3
+R4
+R5
+!i122 -1
+L0 66
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+vSeg7Display
+!s110 1701214794
+!i10b 1
+!s100 a^d9EGljUIIUQLhzAjb520
+!s11b N2cef>ogQ47aL74oFj[?Y3
+IVo<b:4F><HAAfK@OZ=Jmk3
+R2
+R0
+w1701214792
+8Seg7Dsiplay.v
+FSeg7Dsiplay.v
+!i122 -1
+L0 7
+R6
+r1
+!s85 0
+31
+!s108 1701214794.000000
+!s107 Seg7Dsiplay.v|
+!s90 Seg7Dsiplay.v|
+!i113 0
+R10
+R11
+n@seg7@display

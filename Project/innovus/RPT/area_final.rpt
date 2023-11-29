@@ -1,0 +1,7 @@
+    Hinst Name            Module Name          Inst Count           Total Area
+---------------------------------------------------------------------------
+soc_top                                               813          1087032.006
+ chip_displayer           Seg7Display                 370             6168.512
+  chip_displayer/bcdCurrH binToBCD                      0                0.000
+  chip_displayer/bcdCurrM binToBCD_SPC_1                0                0.000
+  chip_displayer/bcdCurrS binToBCD_SPC_2                0                0.000

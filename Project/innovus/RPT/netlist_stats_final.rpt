@@ -1,0 +1,46 @@
+*** Statistics for net list soc_top ***
+Number of cells      = 18382
+Number of nets       = 806
+Number of tri-nets   = 0
+Number of degen nets = 0
+Number of pins       = 2487
+Number of i/os       = 51
+
+Number of nets with    2 terms = 484 (60.0%)
+Number of nets with    3 terms = 136 (16.9%)
+Number of nets with    4 terms = 77 (9.6%)
+Number of nets with    5 terms = 51 (6.3%)
+Number of nets with    6 terms = 16 (2.0%)
+Number of nets with    7 terms = 19 (2.4%)
+Number of nets with    8 terms = 8 (1.0%)
+Number of nets with    9 terms = 4 (0.5%)
+Number of nets with >=10 terms = 11 (1.4%)
+
+*** 26 Primitives used:
+Primitive pad_out (44 insts)
+Primitive pad_in (7 insts)
+Primitive pad_fill_8 (11 insts)
+Primitive pad_fill_4 (24 insts)
+Primitive pad_fill_1 (24 insts)
+Primitive pad_fill_01 (11 insts)
+Primitive pad_fill_005 (308 insts)
+Primitive XOR2X1 (37 insts)
+Primitive OR2X1 (71 insts)
+Primitive NOR2X1 (82 insts)
+Primitive NAND3X1 (84 insts)
+Primitive NAND2X1 (185 insts)
+Primitive MUX2X1 (22 insts)
+Primitive INVX2 (61 insts)
+Primitive INVX1 (1 insts)
+Primitive FILL8 (273 insts)
+Primitive FILL4 (693 insts)
+Primitive FILL32 (14721 insts)
+Primitive FILL2 (553 insts)
+Primitive FILL16 (364 insts)
+Primitive FILL1 (587 insts)
+Primitive DFFQX1 (71 insts)
+Primitive DFFQSRX1 (52 insts)
+Primitive BUFX1 (18 insts)
+Primitive ANTENNA (10 insts)
+Primitive AND2X1 (68 insts)
+************
