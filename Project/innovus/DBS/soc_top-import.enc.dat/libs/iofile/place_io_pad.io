@@ -1,1 +1,1 @@
-/home/u1224540/5710/Project/innovus/SCRIPTS/place_io_pad.io
+/home/u1224540/ECE5710_WatchChip/Project/innovus/SCRIPTS/place_io_pad.io

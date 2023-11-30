@@ -14,7 +14,6 @@ catch {setNanoRouteMode -quiet -routeAntennaCellName "ANTENNA"}
 catch {setNanoRouteMode -quiet -routeInsertAntennaDiode true}
 catch {setNanoRouteMode -quiet -routeInsertDiodeForClockNets true}
 catch {setNanoRouteMode -quiet -routeTdrEffort 5}
-catch {setNanoRouteMode -quiet -routeWithEco false}
 catch {setNanoRouteMode -quiet -routeWithSiDriven true}
 catch {setNanoRouteMode -quiet -routeWithTimingDriven true}
 
