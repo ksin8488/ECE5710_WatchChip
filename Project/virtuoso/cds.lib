@@ -15,4 +15,4 @@ DEFINE RA1SHD_RD
 DEFINE RF2SH
       /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/oa/RF2SH
 
-DEFINE watch_chip /home/u1224540/ECE5710_WatchChip/Project/virtuoso/watch_chip
+DEFINE watch_chip /home/u1174165/ECE5710_WatchChip/virtuoso/watch_chip

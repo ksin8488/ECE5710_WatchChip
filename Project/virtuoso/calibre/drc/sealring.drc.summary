@@ -3,15 +3,15 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Wed Nov 29 21:59:41 2023
+Execution Date/Time:       Thu Nov 30 13:16:41 2023
 Calibre Version:           v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
-Rule File Pathname:        /home/u1224540/ECE5710_WatchChip/Project/virtuoso/calibre/drc/_CLM18_LM16_LM152_6M_fullchip.215a_
+Rule File Pathname:        /home/u1174165/ECE5710_WatchChip/virtuoso/calibre/drc/_CLM18_LM16_LM152_6M_fullchip.215a_
 Rule File Title:           
 Layout System:             GDS
 Layout Path(s):            sealring.calibre.db
 Layout Primary Cell:       sealring
-Current Directory:         /home/u1224540/ECE5710_WatchChip/Project/virtuoso/calibre/drc
-User Name:                 u1224540
+Current Directory:         /home/u1174165/ECE5710_WatchChip/virtuoso/calibre/drc
+User Name:                 u1174165
 Maximum Results/RuleCheck: ALL
 Maximum Result Vertices:   4096
 DRC Results Database:      sealring.drc.results (ASCII)
@@ -687,15 +687,15 @@ RULECHECK DRM.R.1 ..................... NOT EXECUTED
 ---
 CELL sealring .............. TOTAL Result Count = 10 (10)
     RULECHECK PO.R.3 ....... TOTAL Result Count = 1  (1)
-    RULECHECK UTM40K.R.1 ... TOTAL Result Count = 1  (1)
-    RULECHECK PO.R.5 ....... TOTAL Result Count = 1  (1)
     RULECHECK M1.R.1 ....... TOTAL Result Count = 1  (1)
     RULECHECK M2.R.1 ....... TOTAL Result Count = 1  (1)
     RULECHECK M3.R.1 ....... TOTAL Result Count = 1  (1)
     RULECHECK M4.R.1 ....... TOTAL Result Count = 1  (1)
     RULECHECK M5.R.1 ....... TOTAL Result Count = 1  (1)
-    RULECHECK DOD.R.1 ...... TOTAL Result Count = 1  (1)
+    RULECHECK UTM40K.R.1 ... TOTAL Result Count = 1  (1)
     RULECHECK OD.R.3 ....... TOTAL Result Count = 1  (1)
+    RULECHECK DOD.R.1 ...... TOTAL Result Count = 1  (1)
+    RULECHECK PO.R.5 ....... TOTAL Result Count = 1  (1)
 ----------------------------------------------------------------------------------
 --- SUMMARY
 ---

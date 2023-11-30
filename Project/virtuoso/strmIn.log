@@ -2,10 +2,10 @@
 Product   : Virtuoso(R) XStream In
 Program   : @(#)$CDS: strmin version 6.1.8-64b 06/22/2022 16:16 (sjfhw316) $
           : sub-version  IC6.1.8-64b.500.26 
-Started at: 29-Nov-2023  21:35:49
-User Name : u1224540
-Host Name : lab1-3.eng.utah.edu
-Directory : /home/u1224540/ECE5710_WatchChip/Project/virtuoso
+Started at: 30-Nov-2023  13:27:47
+User Name : u1174165
+Host Name : lab1-7.eng.utah.edu
+Directory : /home/u1174165/ECE5710_WatchChip/virtuoso
 CADENCE Design Systems, Inc.
 ********************************************************************************
 Info: Cellview Rev Num:99,  Tech Rev Num:59
@@ -13,157 +13,44 @@ Info: Cellview Rev Num:99,  Tech Rev Num:59
 WARNING (XSTRM-75): Target library 'watch_chip' is attached to the technology library 'tsmc18'. Therefore, the technology file is opened in read-only mode. All the undefined layer-purpose pairs will be dropped.
 WARNING (XSTRM-107): Existing cells in the target library will be overwritten if the cell names in the Stream file and the target library are the same. To prevent this, set the '-writeMode' option to 'noOverwrite'.
 INFO (XSTRM-217): Reading the layer map file, /research/ece/lnis-teaching/Designkits/tsmc180nm/pdk/tsmc18/tsmc18.layermap
-INFO (XSTRM-217): Reading the refliblist file, /home/u1224540/ECE5710_WatchChip/Project/virtuoso/reflib
 INFO (XSTRM-163): You have not used the '-viaMap' option. If a viaMap file, corresponding technology file or technology library exist, then use the '-viaMap' option for creating oaVia instances in the Streamed-In library. Using the '-viaMap' option improves performance and VM usage of applications using the Streamed-In design.
 
 Summary of Options:
 	library				watch_chip
-	strmFile			/home/u1224540/ECE5710_WatchChip/Project/innovus/GDS/soc_top.gds
+	strmFile			/home/u1174165/ECE5710_WatchChip/virtuoso/calibre/drcmetalfill/design_metalfill.gds
 	logFile				strmIn.log
-	topCell				soc_top
 	view				layout
 	case				Preserve
-	replaceBusBitChar		
 	layerMap			/research/ece/lnis-teaching/Designkits/tsmc180nm/pdk/tsmc18/tsmc18.layermap
 	propSeparator			,
-	refLibList				/home/u1224540/ECE5710_WatchChip/Project/virtuoso/reflib
 
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "VIA2NORTH" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "VIA2NORTH" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA0" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA0" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA1" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA1" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA2" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA2" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA3" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA3" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA4" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA4" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA5" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA5" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA6" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA6" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA7" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA7" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA8" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA8" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA9" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA9" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA10" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA10" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA11" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA11" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA12" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA12" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA13" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA13" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA14" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA14" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA15" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA15" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA16" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA16" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA17" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA17" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA18" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA18" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA19" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA19" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA20" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA20" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA21" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA21" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA22" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA22" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA23" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA23" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA24" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA24" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA25" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA25" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA26" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA26" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA27" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA27" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA28" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA28" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA29" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
-INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA29" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
-INFO (XSTRM-287): The STRUCTURE 'pad_fill_01' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'PADS_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'PADS_LIB/pad_fill_01/layout'.
-INFO (XSTRM-287): The STRUCTURE 'pad_fill_4' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'PADS_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'PADS_LIB/pad_fill_4/layout'.
-INFO (XSTRM-287): The STRUCTURE 'INVX1' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'SC_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'SC_LIB/INVX1/layout'.
-INFO (XSTRM-287): The STRUCTURE 'NAND2X1' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'SC_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'SC_LIB/NAND2X1/layout'.
-INFO (XSTRM-287): The STRUCTURE 'MUX2X1' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'SC_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'SC_LIB/MUX2X1/layout'.
-INFO (XSTRM-287): The STRUCTURE 'XOR2X1' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'SC_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'SC_LIB/XOR2X1/layout'.
-INFO (XSTRM-287): The STRUCTURE 'DFFQSRX1' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'SC_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'SC_LIB/DFFQSRX1/layout'.
-INFO (XSTRM-287): The STRUCTURE 'pad_fill_2' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'PADS_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'PADS_LIB/pad_fill_2/layout'.
-INFO (XSTRM-287): The STRUCTURE 'pad_corner' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'PADS_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'PADS_LIB/pad_corner/layout'.
-INFO (XSTRM-287): The STRUCTURE 'FILL32' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'SC_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'SC_LIB/FILL32/layout'.
-INFO (XSTRM-287): The STRUCTURE 'pad_fill_005' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'PADS_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'PADS_LIB/pad_fill_005/layout'.
-INFO (XSTRM-287): The STRUCTURE 'DFFQX1' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'SC_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'SC_LIB/DFFQX1/layout'.
-INFO (XSTRM-287): The STRUCTURE 'FILL2' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'SC_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'SC_LIB/FILL2/layout'.
-INFO (XSTRM-287): The STRUCTURE 'pad_gnd' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'PADS_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'PADS_LIB/pad_gnd/layout'.
-INFO (XSTRM-287): The STRUCTURE 'NOR2X1' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'SC_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'SC_LIB/NOR2X1/layout'.
-INFO (XSTRM-287): The STRUCTURE 'pad_in' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'PADS_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'PADS_LIB/pad_in/layout'.
-INFO (XSTRM-287): The STRUCTURE 'pad_vdd' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'PADS_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'PADS_LIB/pad_vdd/layout'.
-INFO (XSTRM-287): The STRUCTURE 'INVX2' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'SC_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'SC_LIB/INVX2/layout'.
-INFO (XSTRM-287): The STRUCTURE 'FILL16' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'SC_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'SC_LIB/FILL16/layout'.
-INFO (XSTRM-287): The STRUCTURE 'NAND3X1' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'SC_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'SC_LIB/NAND3X1/layout'.
-INFO (XSTRM-287): The STRUCTURE 'pad_out' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'PADS_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'PADS_LIB/pad_out/layout'.
-INFO (XSTRM-287): The STRUCTURE 'OR2X1' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'SC_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'SC_LIB/OR2X1/layout'.
-INFO (XSTRM-287): The STRUCTURE 'FILL8' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'SC_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'SC_LIB/FILL8/layout'.
-INFO (XSTRM-287): The STRUCTURE 'FILL4' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'SC_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'SC_LIB/FILL4/layout'.
-INFO (XSTRM-287): The STRUCTURE 'FILL1' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'SC_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'SC_LIB/FILL1/layout'.
-INFO (XSTRM-287): The STRUCTURE 'AND2X1' in the input GDSII/Stream file will not be translated. This is because either the '-refLibList' option is used and the cellview is available in the reference library 'SC_LIB' or the STRUCTURE is not mapped to the target library using the cell map file/piCellMap SKILL function. Therefore, all the instances of the cellview will be referenced from 'SC_LIB/AND2X1/layout'.
-WARNING (XSTRM-284): DbuPerUU (1000) specified in the technology database or using '-dbuPerUU' is not divisible by the value (2000) set in the GDSII file. This can cause loss in data precision during translation.
-INFO (XSTRM-220): 1. Translating STRUCTURE VIA2NORTH as cellView watch_chip/VIA2NORTH/layout.
-INFO (XSTRM-220): 2. Translating STRUCTURE soc_top_VIA0 as cellView watch_chip/soc_top_VIA0/layout.
-INFO (XSTRM-220): 3. Translating STRUCTURE soc_top_VIA1 as cellView watch_chip/soc_top_VIA1/layout.
-INFO (XSTRM-220): 4. Translating STRUCTURE soc_top_VIA2 as cellView watch_chip/soc_top_VIA2/layout.
-INFO (XSTRM-220): 5. Translating STRUCTURE soc_top_VIA3 as cellView watch_chip/soc_top_VIA3/layout.
-INFO (XSTRM-220): 6. Translating STRUCTURE soc_top_VIA4 as cellView watch_chip/soc_top_VIA4/layout.
-INFO (XSTRM-220): 7. Translating STRUCTURE soc_top_VIA5 as cellView watch_chip/soc_top_VIA5/layout.
-INFO (XSTRM-220): 8. Translating STRUCTURE soc_top_VIA6 as cellView watch_chip/soc_top_VIA6/layout.
-INFO (XSTRM-220): 9. Translating STRUCTURE soc_top_VIA7 as cellView watch_chip/soc_top_VIA7/layout.
-INFO (XSTRM-220): 10. Translating STRUCTURE soc_top_VIA8 as cellView watch_chip/soc_top_VIA8/layout.
-INFO (XSTRM-220): 11. Translating STRUCTURE soc_top_VIA9 as cellView watch_chip/soc_top_VIA9/layout.
-INFO (XSTRM-220): 12. Translating STRUCTURE soc_top_VIA10 as cellView watch_chip/soc_top_VIA10/layout.
-INFO (XSTRM-220): 13. Translating STRUCTURE soc_top_VIA11 as cellView watch_chip/soc_top_VIA11/layout.
-INFO (XSTRM-220): 14. Translating STRUCTURE soc_top_VIA12 as cellView watch_chip/soc_top_VIA12/layout.
-INFO (XSTRM-220): 15. Translating STRUCTURE soc_top_VIA13 as cellView watch_chip/soc_top_VIA13/layout.
-INFO (XSTRM-220): 16. Translating STRUCTURE soc_top_VIA14 as cellView watch_chip/soc_top_VIA14/layout.
-INFO (XSTRM-220): 17. Translating STRUCTURE soc_top_VIA15 as cellView watch_chip/soc_top_VIA15/layout.
-INFO (XSTRM-220): 18. Translating STRUCTURE soc_top_VIA16 as cellView watch_chip/soc_top_VIA16/layout.
-INFO (XSTRM-220): 19. Translating STRUCTURE soc_top_VIA17 as cellView watch_chip/soc_top_VIA17/layout.
-INFO (XSTRM-220): 20. Translating STRUCTURE soc_top_VIA18 as cellView watch_chip/soc_top_VIA18/layout.
-INFO (XSTRM-220): 21. Translating STRUCTURE soc_top_VIA19 as cellView watch_chip/soc_top_VIA19/layout.
-INFO (XSTRM-220): 22. Translating STRUCTURE soc_top_VIA20 as cellView watch_chip/soc_top_VIA20/layout.
-INFO (XSTRM-220): 23. Translating STRUCTURE soc_top_VIA21 as cellView watch_chip/soc_top_VIA21/layout.
-INFO (XSTRM-220): 24. Translating STRUCTURE soc_top_VIA22 as cellView watch_chip/soc_top_VIA22/layout.
-INFO (XSTRM-220): 25. Translating STRUCTURE soc_top_VIA23 as cellView watch_chip/soc_top_VIA23/layout.
-INFO (XSTRM-220): 26. Translating STRUCTURE soc_top_VIA24 as cellView watch_chip/soc_top_VIA24/layout.
-INFO (XSTRM-220): 27. Translating STRUCTURE soc_top_VIA25 as cellView watch_chip/soc_top_VIA25/layout.
-INFO (XSTRM-220): 28. Translating STRUCTURE soc_top_VIA26 as cellView watch_chip/soc_top_VIA26/layout.
-INFO (XSTRM-220): 29. Translating STRUCTURE soc_top_VIA27 as cellView watch_chip/soc_top_VIA27/layout.
-INFO (XSTRM-220): 30. Translating STRUCTURE soc_top_VIA28 as cellView watch_chip/soc_top_VIA28/layout.
-INFO (XSTRM-220): 31. Translating STRUCTURE soc_top_VIA29 as cellView watch_chip/soc_top_VIA29/layout.
-INFO (XSTRM-220): 32. Translating STRUCTURE soc_top as cellView watch_chip/soc_top/layout.
+INFO (XSTRM-220): 1. Translating STRUCTURE tsmc_c018_sealring_corner_1p6m_metalfill as cellView watch_chip/tsmc_c018_sealring_corner_1p6m_metalfill/layout.
+INFO (XSTRM-220): 2. Translating STRUCTURE tsmc_c018_seal_ring_edge_1p6m_metalfill as cellView watch_chip/tsmc_c018_seal_ring_edge_1p6m_metalfill/layout.
+INFO (XSTRM-220): 3. Translating STRUCTURE DM6_L_metalfill as cellView watch_chip/DM6_L_metalfill/layout.
+INFO (XSTRM-220): 4. Translating STRUCTURE pad_gnd_metalfill as cellView watch_chip/pad_gnd_metalfill/layout.
+INFO (XSTRM-220): 5. Translating STRUCTURE pad_vdd_metalfill as cellView watch_chip/pad_vdd_metalfill/layout.
+INFO (XSTRM-220): 6. Translating STRUCTURE DM1_S_metalfill as cellView watch_chip/DM1_S_metalfill/layout.
+INFO (XSTRM-220): 7. Translating STRUCTURE DM5_S_metalfill as cellView watch_chip/DM5_S_metalfill/layout.
+INFO (XSTRM-220): 8. Translating STRUCTURE DM5_M_metalfill as cellView watch_chip/DM5_M_metalfill/layout.
+INFO (XSTRM-220): 9. Translating STRUCTURE DM5_L_metalfill as cellView watch_chip/DM5_L_metalfill/layout.
+INFO (XSTRM-220): 10. Translating STRUCTURE soc_top_metalfill as cellView watch_chip/soc_top_metalfill/layout.
+INFO (XSTRM-220): 11. Translating STRUCTURE DM4_S_metalfill as cellView watch_chip/DM4_S_metalfill/layout.
+INFO (XSTRM-220): 12. Translating STRUCTURE sealring_metalfill as cellView watch_chip/sealring_metalfill/layout.
 
 Summary of Objects Translated:
-	Instances:                              34640
+	Instances:                              7747
 	CustomVias:                             0
-	StandardVias:                           2490
+	StandardVias:                           0
 	CdsGenVias:                             0
-	Arrays:                                 0
-	Polygons:                               0
-	Paths:                                  3490
+	Arrays:                                 5120
+	Polygons:                               18
+	Paths:                                  0
 	PathSegs:                               0
-	Rectangles:                             23690
-	Text:                                   17287
+	Rectangles:                             1130386
+	Text:                                   0
 	Node:                                   0
 	Line:                                   0
-	Cells:                                  32
+	Cells:                                  12
 
-Elapsed Time: 2.6s   User Time: 0.4s   CPU Time: 0.1s   Peak VM: 37556KB  CPUs Used: 2
-INFO (XSTRM-234): Translation completed. '0' error(s) and '3' warning(s) found.
+Elapsed Time: 2.1s   User Time: 0.5s   CPU Time: 0.1s   Peak VM: 51184KB  CPUs Used: 2
+INFO (XSTRM-234): Translation completed. '0' error(s) and '2' warning(s) found.
