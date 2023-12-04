@@ -1,0 +1,452 @@
+# //  Questa Sim-64
+# //  Version 2019.4 linux_x86_64 Oct 15 2019
+# //
+# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim . 
+# Start time: 15:55:02 on Nov 28,2023
+# ** Error (suppressible): (vsim-19) Failed to access library '' at "".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# End time: 15:55:02 on Nov 28,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Loading project postsynth
+vsim work.WatchChipTb -voptargs=+acc
+# vsim work.WatchChipTb -voptargs="+acc" 
+# Start time: 15:55:38 on Nov 28,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.WatchChipTb(fast)
+# Loading work.soc_top(fast)
+# Loading work.Seg7Display(fast)
+# Loading work.binToBCD(fast)
+# Loading work.DFFQX1(fast)
+# Loading work.DFFQSRX1(fast)
+# Loading work.NAND3X1(fast)
+# Loading work.NAND2X1(fast)
+# Loading work.OR2X1(fast)
+# Loading work.NOR2X1(fast)
+# Loading work.XOR2X1(fast)
+# Loading work.MUX2X1(fast)
+# Loading work.AND2X1(fast)
+# Loading work.INVX2(fast)
+# Loading work.INVX1(fast)
+# Loading work.INVX4(fast)
+# Loading work.pad_in(fast)
+# Loading work.pad_out(fast)
+add wave -position insertpoint sim:/WatchChipTb/*
+run -all
+add wave -position insertpoint sim:/WatchChipTb/watch/*
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.WatchChipTb(fast)
+# Loading work.soc_top(fast)
+# Loading work.Seg7Display(fast)
+# Loading work.binToBCD(fast)
+# Loading work.DFFQX1(fast)
+# Loading work.DFFQSRX1(fast)
+# Loading work.NAND3X1(fast)
+# Loading work.NAND2X1(fast)
+# Loading work.OR2X1(fast)
+# Loading work.NOR2X1(fast)
+# Loading work.XOR2X1(fast)
+# Loading work.MUX2X1(fast)
+# Loading work.AND2X1(fast)
+# Loading work.INVX2(fast)
+# Loading work.INVX1(fast)
+# Loading work.INVX4(fast)
+# Loading work.pad_in(fast)
+# Loading work.pad_out(fast)
+run -all
+# End time: 16:08:36 on Nov 28,2023, Elapsed time: 0:12:58
+# Errors: 11, Warnings: 0
+# Closing project /home/u1224540/5710/Project/genus/HDL/RTL/postsynth.mpf
+# reading /uusoc/facility/cad_tools/Mentor/modelsim2019.4/questasim/linux_x86_64/../modelsim.ini
+# Loading project presynth_watchchip
+# Compile of WatchChip.v was successful.
+# Compile of binToBCD.v failed with 4 errors.
+# Compile of Seg7Dsiplay.v was successful.
+# Compile of digital_clock_time.v was successful.
+# Compile of stateController.v was successful.
+# Compile of soc_top.v was successful.
+# Compile of soc_top_tb.v was successful.
+# 7 compiles, 1 failed with 4 errors.
+# Compile of binToBCD.v failed with 4 errors.
+# Compile of WatchChip.v was successful.
+# Compile of bcdToSeg7.v was successful.
+# Compile of binToBCD.v was successful.
+# Compile of Seg7Dsiplay.v was successful.
+# Compile of backlight.v was successful.
+# Compile of clk_divider.v was successful.
+# Compile of digital_clock_time.v was successful.
+# Compile of stateController.v was successful.
+# Compile of soc_top.v was successful.
+# Compile of soc_top_tb.v was successful.
+# Compile of padlib_tsmc180.v was successful.
+# Compile of sclib_tsmc180.v was successful.
+# 12 compiles, 0 failed with no errors.
+vsim work.WatchChipTb -voptargs=+acc
+# vsim work.WatchChipTb -voptargs="+acc" 
+# Start time: 16:09:48 on Nov 28,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Error (suppressible): /home/u1224540/5710/Project/genus/HDL/RTL/7seg/Seg7Dsiplay.v(65): (vopt-2912) Port 'clk' not found in module 'binToBCD' (1st connection).
+# ** Error (suppressible): /home/u1224540/5710/Project/genus/HDL/RTL/7seg/Seg7Dsiplay.v(65): (vopt-2912) Port 'rst' not found in module 'binToBCD' (2nd connection).
+# ** Error (suppressible): /home/u1224540/5710/Project/genus/HDL/RTL/7seg/Seg7Dsiplay.v(72): (vopt-2912) Port 'clk' not found in module 'binToBCD' (1st connection).
+# ** Error (suppressible): /home/u1224540/5710/Project/genus/HDL/RTL/7seg/Seg7Dsiplay.v(72): (vopt-2912) Port 'rst' not found in module 'binToBCD' (2nd connection).
+# ** Error (suppressible): /home/u1224540/5710/Project/genus/HDL/RTL/7seg/Seg7Dsiplay.v(79): (vopt-2912) Port 'clk' not found in module 'binToBCD' (1st connection).
+# ** Error (suppressible): /home/u1224540/5710/Project/genus/HDL/RTL/7seg/Seg7Dsiplay.v(79): (vopt-2912) Port 'rst' not found in module 'binToBCD' (2nd connection).
+# ** Error (suppressible): /home/u1224540/5710/Project/genus/HDL/RTL/7seg/Seg7Dsiplay.v(87): (vopt-2912) Port 'clk' not found in module 'binToBCD' (1st connection).
+# ** Error (suppressible): /home/u1224540/5710/Project/genus/HDL/RTL/7seg/Seg7Dsiplay.v(87): (vopt-2912) Port 'rst' not found in module 'binToBCD' (2nd connection).
+# ** Error (suppressible): /home/u1224540/5710/Project/genus/HDL/RTL/7seg/Seg7Dsiplay.v(94): (vopt-2912) Port 'clk' not found in module 'binToBCD' (1st connection).
+# ** Error (suppressible): /home/u1224540/5710/Project/genus/HDL/RTL/7seg/Seg7Dsiplay.v(94): (vopt-2912) Port 'rst' not found in module 'binToBCD' (2nd connection).
+# ** Error (suppressible): /home/u1224540/5710/Project/genus/HDL/RTL/7seg/Seg7Dsiplay.v(101): (vopt-2912) Port 'clk' not found in module 'binToBCD' (1st connection).
+# ** Error (suppressible): /home/u1224540/5710/Project/genus/HDL/RTL/7seg/Seg7Dsiplay.v(101): (vopt-2912) Port 'rst' not found in module 'binToBCD' (2nd connection).
+# Optimization failed
+# Error loading design
+# End time: 16:09:50 on Nov 28,2023, Elapsed time: 0:00:02
+# Errors: 12, Warnings: 0
+# Compile of Seg7Dsiplay.v was successful.
+vsim work.WatchChipTb -voptargs=+acc
+# vsim work.WatchChipTb -voptargs="+acc" 
+# Start time: 16:10:18 on Nov 28,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.WatchChipTb(fast)
+# Loading work.soc_top(fast)
+# Loading work.pad_in(fast)
+# Loading work.pad_out(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.FlipFlop(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Seg7Display(fast)
+# Loading work.binToBCD(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+add wave -position insertpoint sim:/WatchChipTb/watch/chip/displayer/bcdCurrS/*
+run -all
+# Compile of Seg7Dsiplay.v failed with 6 errors.
+# Compile of dabble.v was successful.
+# 2 compiles, 1 failed with 6 errors.
+# Compile of Seg7Dsiplay.v was successful.
+# Compile of Seg7Dsiplay.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.WatchChipTb(fast)
+# Loading work.soc_top(fast)
+# Loading work.pad_in(fast)
+# Loading work.pad_out(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.FlipFlop(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Seg7Display(fast)
+# Loading work.bin2bcd(fast)
+# Loading work.dd_incoming(fast)
+# Loading work.latch(fast)
+# Loading work.dd_ctrl(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+# Warning in wave window restart: (vish-4014) No objects found matching '/WatchChipTb/watch/chip/displayer/bcdCurrS/bin'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/WatchChipTb/watch/chip/displayer/bcdCurrS/BCD'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/WatchChipTb/watch/chip/displayer/bcdCurrS/i'. 
+add wave -position insertpoint sim:/WatchChipTb/watch/chip/displayer/bcdCurrS/*
+add wave -position insertpoint  \
+sim:/WatchChipTb/watch/chip/t_seconds \
+sim:/WatchChipTb/watch/chip/t_minutes \
+sim:/WatchChipTb/watch/chip/t_hours
+run -all
+add wave -position insertpoint  \
+sim:/WatchChipTb/watch/chip/displayer/current_s \
+sim:/WatchChipTb/watch/chip/displayer/current_m \
+sim:/WatchChipTb/watch/chip/displayer/current_h \
+sim:/WatchChipTb/watch/chip/displayer/stopwatch_s \
+sim:/WatchChipTb/watch/chip/displayer/stopwatch_m \
+sim:/WatchChipTb/watch/chip/displayer/stopwatch_h
+add wave -position insertpoint  \
+sim:/WatchChipTb/watch/chip/displayer/bcdCurrSec \
+sim:/WatchChipTb/watch/chip/displayer/bcdCurrMin \
+sim:/WatchChipTb/watch/chip/displayer/bcdCurrHour \
+sim:/WatchChipTb/watch/chip/displayer/bcdStopSec \
+sim:/WatchChipTb/watch/chip/displayer/bcdStopMin \
+sim:/WatchChipTb/watch/chip/displayer/bcdStopHour
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.WatchChipTb(fast)
+# Loading work.soc_top(fast)
+# Loading work.pad_in(fast)
+# Loading work.pad_out(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.FlipFlop(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Seg7Display(fast)
+# Loading work.bin2bcd(fast)
+# Loading work.dd_incoming(fast)
+# Loading work.latch(fast)
+# Loading work.dd_ctrl(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+run -all
+add wave -position insertpoint  \
+sim:/WatchChipTb/clk
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.WatchChipTb(fast)
+# Loading work.soc_top(fast)
+# Loading work.pad_in(fast)
+# Loading work.pad_out(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.FlipFlop(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Seg7Display(fast)
+# Loading work.bin2bcd(fast)
+# Loading work.dd_incoming(fast)
+# Loading work.latch(fast)
+# Loading work.dd_ctrl(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+run -all
+add wave -position insertpoint sim:/WatchChipTb/watch/chip/displayer/bcdCurrS/*
+add wave -position insertpoint sim:/WatchChipTb/watch/chip/displayer/bcdCurrS/incoming/*
+add wave -position insertpoint sim:/WatchChipTb/watch/chip/displayer/bcdCurrS/outgoing/*
+add wave -position insertpoint sim:/WatchChipTb/watch/chip/displayer/bcdCurrS/ctrl/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.WatchChipTb(fast)
+# Loading work.soc_top(fast)
+# Loading work.pad_in(fast)
+# Loading work.pad_out(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.FlipFlop(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Seg7Display(fast)
+# Loading work.bin2bcd(fast)
+# Loading work.dd_incoming(fast)
+# Loading work.latch(fast)
+# Loading work.dd_ctrl(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+run -all
+# Compile of dabble.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.WatchChipTb(fast)
+# Loading work.soc_top(fast)
+# Loading work.pad_in(fast)
+# Loading work.pad_out(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.FlipFlop(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Seg7Display(fast)
+# Loading work.bin2bcd(fast)
+# Loading work.dd_incoming(fast)
+# Loading work.latch(fast)
+# Loading work.dd_ctrl(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+run -all
+# Compile of WatchChip.v was successful.
+# Compile of bcdToSeg7.v was successful.
+# Compile of Seg7Dsiplay.v was successful.
+# Compile of backlight.v was successful.
+# Compile of clk_divider.v was successful.
+# Compile of digital_clock_time.v was successful.
+# Compile of stateController.v was successful.
+# Compile of soc_top.v was successful.
+# Compile of soc_top_tb.v was successful.
+# Compile of padlib_tsmc180.v was successful.
+# Compile of sclib_tsmc180.v was successful.
+# Compile of dabble.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.WatchChipTb(fast)
+# Loading work.soc_top(fast)
+# Loading work.pad_in(fast)
+# Loading work.pad_out(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.FlipFlop(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Seg7Display(fast)
+# Loading work.bin2bcd(fast)
+# Loading work.dd_incoming(fast)
+# Loading work.latch(fast)
+# Loading work.dd_ctrl(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+run -all
+# Compile of dabble.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.WatchChipTb(fast)
+# Loading work.soc_top(fast)
+# Loading work.pad_in(fast)
+# Loading work.pad_out(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.FlipFlop(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Seg7Display(fast)
+# Loading work.bin2bcd(fast)
+# Loading work.dd_incoming(fast)
+# Loading work.latch(fast)
+# Loading work.dd_ctrl(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+run -all
+# Compile of dabble.v was successful.
+# Compile of dabble.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.WatchChipTb(fast)
+# Loading work.soc_top(fast)
+# Loading work.pad_in(fast)
+# Loading work.pad_out(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.FlipFlop(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Seg7Display(fast)
+# Loading work.bin2bcd(fast)
+# Loading work.dd_incoming(fast)
+# Loading work.latch(fast)
+# Loading work.dd_ctrl(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+run -all
+# Compile of dabble.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.WatchChipTb(fast)
+# Loading work.soc_top(fast)
+# Loading work.pad_in(fast)
+# Loading work.pad_out(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.FlipFlop(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Seg7Display(fast)
+# Loading work.bin2bcd(fast)
+# Loading work.dd_incoming(fast)
+# Loading work.latch(fast)
+# Loading work.dd_ctrl(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+run -all
+# Compile of dabble.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.WatchChipTb(fast)
+# Loading work.soc_top(fast)
+# Loading work.pad_in(fast)
+# Loading work.pad_out(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.FlipFlop(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Seg7Display(fast)
+# Loading work.bin2bcd(fast)
+# Loading work.dd_incoming(fast)
+# Loading work.latch(fast)
+# Loading work.dd_ctrl(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+run -all
+# Compile of dabble.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.WatchChipTb(fast)
+# Loading work.soc_top(fast)
+# Loading work.pad_in(fast)
+# Loading work.pad_out(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.FlipFlop(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Seg7Display(fast)
+# Loading work.bin2bcd(fast)
+# Loading work.dd_incoming(fast)
+# Loading work.latch(fast)
+# Loading work.dd_ctrl(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+run -all
+# Compile of dabble.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.WatchChipTb(fast)
+# Loading work.soc_top(fast)
+# Loading work.pad_in(fast)
+# Loading work.pad_out(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.FlipFlop(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Seg7Display(fast)
+# Loading work.bin2bcd(fast)
+# Loading work.dd_incoming(fast)
+# Loading work.latch(fast)
+# Loading work.dd_ctrl(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+run -all
+# Compile of dabble.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.WatchChipTb(fast)
+# Loading work.soc_top(fast)
+# Loading work.pad_in(fast)
+# Loading work.pad_out(fast)
+# Loading work.WatchChip(fast)
+# Loading work.clk_divider(fast)
+# Loading work.watch_fsm(fast)
+# Loading work.FlipFlop(fast)
+# Loading work.Digital_Clock(fast)
+# Loading work.Seg7Display(fast)
+# Loading work.bin2bcd(fast)
+# Loading work.dd_incoming(fast)
+# Loading work.latch(fast)
+# Loading work.dd_ctrl(fast)
+# Loading work.bcdToSeg7(fast)
+# Loading work.backlight_controller(fast)
+run -all
+# End time: 17:11:53 on Nov 28,2023, Elapsed time: 1:01:35
+# Errors: 3, Warnings: 0

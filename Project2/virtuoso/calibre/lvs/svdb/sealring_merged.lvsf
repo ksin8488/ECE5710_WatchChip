@@ -1,0 +1,27 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/lvs
+lvs_LvsfVersion 4
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {3 3 0 0}
+lvs_SourceCase YES
+lvs_LayoutCase YES
+lvs_PowerName vdd
+lvs_PowerName vdd!
+lvs_PowerName vcc
+lvs_PowerName vcc!
+lvs_PowerName VCC
+lvs_PowerName VCC!
+lvs_PowerName VDD
+lvs_PowerName VDD!
+lvs_GroundName gnd
+lvs_GroundName gnd!
+lvs_GroundName vss
+lvs_GroundName vss!
+lvs_GroundName GND
+lvs_GroundName GND!
+lvs_GroundName VSS
+lvs_GroundName VSS!
+lvs_LvsOutFile LVS_REPORT sealring_merged.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST /home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/lvs/sealring_merged.sp
+lvs_LvsOutFile RULES_FILE /home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/lvs/_calibre.lvs_
+lvs_LvsRunTimes 1701728725 1701728726

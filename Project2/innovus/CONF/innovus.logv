@@ -1,0 +1,65 @@
+[11/27 18:38:57      0s] 
+[11/27 18:38:57      0s] Cadence Innovus(TM) Implementation System.
+[11/27 18:38:57      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[11/27 18:38:57      0s] 
+[11/27 18:38:57      0s] Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+[11/27 18:38:57      0s] Options:	
+[11/27 18:38:57      0s] Date:		Mon Nov 27 18:38:57 2023
+[11/27 18:38:57      0s] Host:		lab1-4.eng.utah.edu (x86_64 w/Linux 4.18.0-477.27.1.el8_8.x86_64) (8cores*16cpus*Intel(R) Core(TM) i7-10700 CPU @ 2.90GHz 16384KB)
+[11/27 18:38:57      0s] OS:		Red Hat Enterprise Linux release 8.8 (Ootpa)
+[11/27 18:38:57      0s] 
+[11/27 18:38:57      0s] License:
+[11/27 18:38:57      0s] 		[18:38:57.041474] Configured Lic search path (21.01-s002): /uusoc/facility/cad_tools/Cadence/common_license:/uusoc/facility/cad_tools/Mentor/common_license
+
+[11/27 18:38:57      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[11/27 18:38:57      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[11/27 18:39:14      8s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+[11/27 18:39:17     10s] @(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+[11/27 18:39:17     10s] @(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+[11/27 18:39:17     10s] @(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+[11/27 18:39:17     10s] @(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+[11/27 18:39:17     10s] @(#)CDS: CPE v21.15-s076
+[11/27 18:39:17     10s] @(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[11/27 18:39:17     10s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[11/27 18:39:17     10s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[11/27 18:39:17     10s] @(#)CDS: RCDB 11.15.0
+[11/27 18:39:17     10s] @(#)CDS: STYLUS 21.12-s013_1 (08/15/2022 08:25 PDT)
+[11/27 18:39:17     10s] @(#)CDS: SystemPlanner-21.15Rel-8720 (21.15) (2022-08-22 18:31:54+0800)
+[11/27 18:39:17     10s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_2612412_lab1-4.eng.utah.edu_u1224540_ns5J0e.
+
+[11/27 18:39:17     10s] Change the soft stacksize limit to 0.2%RAM (128 mbytes). Set global soft_stack_size_limit to change the value.
+[11/27 18:39:20     12s] 
+[11/27 18:39:20     12s] **INFO:  MMMC transition support version v31-84 
+[11/27 18:39:20     12s] 
+[11/27 18:39:20     12s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[11/27 18:39:20     12s] <CMD> suppressMessage ENCEXT-2799
+[11/27 18:39:20     12s] <CMD> win
+[11/27 18:40:01     13s] couldn't read file "SCRIPTS/place_route.tcl": no such file or directory
+[11/27 18:40:10     14s] <CMD> set init_design_uniquify 1
+[11/27 18:40:25     14s] <CMD> freeDesign
+[11/27 18:40:25     14s] **ERROR: (IMPSYC-6148):	Command freeDesign cannot proceed; design is not loaded yet.
+
+[11/27 18:40:25     14s] 
+[11/27 18:40:25     14s] Info (SM2C): Status of key globals:
+[11/27 18:40:25     14s] 	 MMMC-by-default flow     : 1
+[11/27 18:40:25     14s] 	 Default MMMC objs envvar : 0
+[11/27 18:40:25     14s] 	 Data portability         : 0
+[11/27 18:40:25     14s] 	 MMMC PV Emulation        : 0
+[11/27 18:40:25     14s] 	 MMMC debug               : 0
+[11/27 18:40:25     14s] 	 Init_Design flow         : 1
+[11/27 18:40:25     14s] 
+[11/27 18:40:25     14s] 
+[11/27 18:40:25     14s] 	 CTE SM2C global          : false
+[11/27 18:40:25     14s] 	 Reporting view filter    : false
+[11/27 18:40:25     14s] 
+[11/27 18:40:39     15s] couldn't read file "CONF/picosoc.globals": no such file or directory
+[11/27 18:40:46     16s] ambiguous command name "q": queryDensityInBox queryFPlanObject queryPinDensity query_objects query_power_data
+[11/27 18:40:47     16s] 
+[11/27 18:40:47     16s] *** Memory Usage v#1 (Current mem = 1006.805M, initial mem = 483.875M) ***
+[11/27 18:40:47     16s] 
+[11/27 18:40:47     16s] *** Summary of all messages that are not suppressed in this session:
+[11/27 18:40:47     16s] Severity  ID               Count  Summary                                  
+[11/27 18:40:47     16s] ERROR     IMPSYC-6148          1  Command %s cannot proceed; design is not...
+[11/27 18:40:47     16s] *** Message Summary: 0 warning(s), 1 error(s)
+[11/27 18:40:47     16s] 
+[11/27 18:40:47     16s] --- Ending "Innovus" (totcpu=0:00:16.3, real=0:01:50, mem=1006.8M) ---

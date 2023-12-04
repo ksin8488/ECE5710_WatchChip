@@ -1,0 +1,19 @@
+xmvlog: *W,DLNOHV: Unable to find an 'hdl.var' file to load in.
+TOOL:	xmvlog(64)	20.09-s022: Started on Nov 29, 2023 at 21:37:35 MST
+xmvlog
+    -work __nclib
+    -view module
+    -logfile xmvlog.log
+    -cdslib /tmp/ihdl_cdslibb9502_59502
+    -messages
+    -nostdout
+    -nocopyright
+    -ESCAPEDNAME
+    /home/u1224540/ECE5710_WatchChip/Project/innovus/HDL/PLACED/soc_top_placed_virtuoso.v
+
+file: /home/u1224540/ECE5710_WatchChip/Project/innovus/HDL/PLACED/soc_top_placed_virtuoso.v
+	module __nclib.soc_top:module
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+TOOL:	xmvlog(64)	20.09-s022: Exiting on Nov 29, 2023 at 21:37:35 MST  (total: 00:00:00)

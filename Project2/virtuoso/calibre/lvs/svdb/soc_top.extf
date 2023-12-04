@@ -1,0 +1,12 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1701319754 1701319757
+lvs_ExtOutFile RUNDIR /home/u1224540/ECE5710_WatchChip/Project/virtuoso/calibre/lvs
+lvs_ExtOutFile RULES_FILE /home/u1224540/ECE5710_WatchChip/Project/virtuoso/calibre/lvs/_calibre.lvs_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoErcSummary {7 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /home/u1224540/ECE5710_WatchChip/Project/virtuoso/calibre/lvs/soc_top.sp
+lvs_ExtOutFile EXTRACTION_REPORT soc_top.lvs.report.ext
+lvs_ExtOutFile ERC_DATABASE soc_top.erc.results
+lvs_ExtOutFile ERC_SUMMARY soc_top.erc.summary

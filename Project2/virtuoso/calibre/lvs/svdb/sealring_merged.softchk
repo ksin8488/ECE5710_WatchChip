@@ -1,0 +1,61 @@
+sealring_merged 1000
+SOFTCHK DNW CONTACT.
+0 0 0 Dec  4 15:25:25 2023                                                      
+SOFTCHK poly_term CONTACT.
+0 0 0 Dec  4 15:25:25 2023                                                      
+SOFTCHK poly_term CONTACT.
+0 0 0 Dec  4 15:25:25 2023                                                      
+SOFTCHK rfdmy56 CONTACT.
+0 0 0 Dec  4 15:25:25 2023                                                      
+SOFTCHK nxwell CONTACT.
+0 0 0 Dec  4 15:25:25 2023                                                      
+SOFTCHK RFDUMMY5T CONTACT.
+0 0 0 Dec  4 15:25:25 2023                                                      
+SOFTCHK RFDUMMY6T CONTACT.
+0 0 0 Dec  4 15:25:25 2023                                                      
+SOFTCHK coll CONTACT.
+0 0 0 Dec  4 15:25:25 2023                                                      
+SOFTCHK coll_od2 CONTACT.
+0 0 0 Dec  4 15:25:25 2023                                                      
+SOFTCHK n_psub CONTACT.
+1 1 4 Dec  4 15:25:25 2023                                                      
+Net 738 is selected for stamping.
+Rejected nets: 737
+Net 738 is selected for stamping.
+Rejected nets: 737
+p 1 10
+CN sealring_merged c 1 0 0 1 0 0 0
+DN 737
+5 45
+1890005 45
+1890005 2020045
+1880005 2020045
+1880005 10045
+10005 10045
+10005 2010045
+1880005 2010045
+1880005 2020045
+5 2020045
+SOFTCHK psub CONTACT.
+1 1 4 Dec  4 15:25:25 2023                                                      
+Net 738 is selected for stamping.
+Rejected nets: 737
+Net 738 is selected for stamping.
+Rejected nets: 737
+p 1 10
+CN sealring_merged c 1 0 0 1 0 0 0
+DN 737
+5 45
+1890005 45
+1890005 2020045
+1880005 2020045
+1880005 10045
+10005 10045
+10005 2010045
+1880005 2010045
+1880005 2020045
+5 2020045
+SOFTCHK psub_term CONTACT.
+0 0 0 Dec  4 15:25:25 2023                                                      
+SOFTCHK rw CONTACT.
+0 0 0 Dec  4 15:25:25 2023                                                      

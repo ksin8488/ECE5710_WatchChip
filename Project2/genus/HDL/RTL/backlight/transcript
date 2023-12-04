@@ -1,0 +1,654 @@
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 linux_x86_64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim . 
+# Start time: 21:44:46 on Nov 07,2023
+# ** Error (suppressible): (vsim-19) Failed to access library '' at "".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# End time: 21:44:46 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Loading project backlight
+# Compile of backlight.v was successful.
+# Compile of clk_divider.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of backlightTb.v was successful.
+vsim work.backlightTb -voptargs=+acc
+# vsim work.backlightTb -voptargs="+acc" 
+# Start time: 21:45:53 on Nov 07,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+run -all
+# ERROR: Light is not off at test 1
+# ** Note: $stop    : /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlightTb.v(24)
+#    Time: 5 ns  Iteration: 0  Instance: /backlightTb
+# Break in Module backlightTb at /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlightTb.v line 24
+add wave -position insertpoint sim:/backlightTb/backlight/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+run -all
+# ERROR: Light is not off at test 1
+# ** Note: $stop    : /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlightTb.v(24)
+#    Time: 5 ns  Iteration: 0  Instance: /backlightTb
+# Break in Module backlightTb at /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlightTb.v line 24
+vlog *
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:47:28 on Nov 07,2023
+# vlog -reportprogress 300 backlight.cr.mti backlight.mpf backlight.v backlightTb.v transcript vsim.wlf work 
+# ** Error: (vlog-13069) backlight.cr.mti(1): near "/": syntax error, unexpected '/', expecting class.
+# ** Error: (vlog-13069) backlight.mpf(1): near "modelsim": syntax error, unexpected IDENTIFIER.
+# ** Error: backlight.mpf(1): (vlog-13205) Syntax error found in the scope following 'vsim'. Is there a missing '::'?
+# ** Error: (vlog-13069) backlight.mpf(1): near ".": syntax error, unexpected '.', expecting class.
+# ** Error: (vlog-13069) backlight.cr.mti(1): near "EOF": syntax error, unexpected end of source code.
+# ** Error: backlight.cr.mti(1): (vlog-13205) Syntax error found in the scope following 'r'. Is there a missing '::'?
+# ** Error: (vlog-13069) transcript(1): near "#": syntax error, unexpected '#', expecting class.
+# ** Error: (vlog-13069) vsim.wlf(1): syntax error, unexpected $undefined, expecting class.
+# ** Error: (vlog-2054) File "work" is a directory.
+# End time: 21:47:29 on Nov 07,2023, Elapsed time: 0:00:01
+# Errors: 9, Warnings: 0
+# /home/ella/intelFPGA_lite/22.1std/questa_fse/linux_x86_64/vlog failed.
+ls
+# backlight.cr.mti
+# backlight.mpf
+# backlightTb.v
+# backlight.v
+# transcript
+# vsim.wlf
+# work
+vlog backlight.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:47:35 on Nov 07,2023
+# vlog -reportprogress 300 backlight.v 
+# -- Compiling module backlight_controller
+# 
+# Top level modules:
+# 	backlight_controller
+# End time: 21:47:35 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog backlightTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:47:38 on Nov 07,2023
+# vlog -reportprogress 300 backlightTb.v 
+# -- Compiling module backlightTb
+# 
+# Top level modules:
+# 	backlightTb
+# End time: 21:47:38 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+vlog -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlight.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:49:30 on Nov 07,2023
+# vlog -reportprogress 300 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlight.v 
+# -- Compiling module backlight_controller
+# 
+# Top level modules:
+# 	backlight_controller
+# End time: 21:49:30 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlightTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:49:30 on Nov 07,2023
+# vlog -reportprogress 300 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlightTb.v 
+# -- Compiling module backlightTb
+# 
+# Top level modules:
+# 	backlightTb
+# End time: 21:49:30 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/clk_divider/clk_divider.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:49:30 on Nov 07,2023
+# vlog -reportprogress 300 -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/clk_divider/clk_divider.v 
+# -- Compiling module clk_divider
+# 
+# Top level modules:
+# 	clk_divider
+# End time: 21:49:30 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+vlog -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlight.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:51:50 on Nov 07,2023
+# vlog -reportprogress 300 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlight.v 
+# -- Compiling module backlight_controller
+# 
+# Top level modules:
+# 	backlight_controller
+# End time: 21:51:50 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlightTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:51:50 on Nov 07,2023
+# vlog -reportprogress 300 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlightTb.v 
+# -- Compiling module backlightTb
+# 
+# Top level modules:
+# 	backlightTb
+# End time: 21:51:50 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/clk_divider/clk_divider.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:51:50 on Nov 07,2023
+# vlog -reportprogress 300 -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/clk_divider/clk_divider.v 
+# -- Compiling module clk_divider
+# 
+# Top level modules:
+# 	clk_divider
+# End time: 21:51:50 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlight.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:51:57 on Nov 07,2023
+# vlog -reportprogress 300 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlight.v 
+# -- Compiling module backlight_controller
+# 
+# Top level modules:
+# 	backlight_controller
+# End time: 21:51:57 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlightTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:51:57 on Nov 07,2023
+# vlog -reportprogress 300 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlightTb.v 
+# -- Compiling module backlightTb
+# 
+# Top level modules:
+# 	backlightTb
+# End time: 21:51:57 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/clk_divider/clk_divider.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:51:58 on Nov 07,2023
+# vlog -reportprogress 300 -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/clk_divider/clk_divider.v 
+# -- Compiling module clk_divider
+# 
+# Top level modules:
+# 	clk_divider
+# End time: 21:51:58 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+vsim work.backlightTb -voptargs=+acc
+# End time: 21:52:15 on Nov 07,2023, Elapsed time: 0:06:22
+# Errors: 0, Warnings: 1
+# vsim work.backlightTb -voptargs="+acc" 
+# Start time: 21:52:15 on Nov 07,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+add wave -position insertpoint sim:/backlightTb/backlight/seconds_clk/*
+# Can't move the Now cursor.
+run -all
+vlog clk_divider.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:54:11 on Nov 07,2023
+# vlog -reportprogress 300 clk_divider.v 
+# ** Error: (vlog-7) Failed to open design unit file "clk_divider.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 21:54:11 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /home/ella/intelFPGA_lite/22.1std/questa_fse/linux_x86_64/vlog failed.
+vlog ../clk_divider/clk_divider.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:54:16 on Nov 07,2023
+# vlog -reportprogress 300 ../clk_divider/clk_divider.v 
+# -- Compiling module clk_divider
+# 
+# Top level modules:
+# 	clk_divider
+# End time: 21:54:16 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+vlog backlight.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:56:18 on Nov 07,2023
+# vlog -reportprogress 300 backlight.v 
+# -- Compiling module backlight_controller
+# 
+# Top level modules:
+# 	backlight_controller
+# End time: 21:56:18 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+vlog backlightTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:57:35 on Nov 07,2023
+# vlog -reportprogress 300 backlightTb.v 
+# -- Compiling module backlightTb
+# 
+# Top level modules:
+# 	backlightTb
+# End time: 21:57:35 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+# Light on for one second...
+# Light on for two seconds...
+# Light on for three seconds...
+# ERROR: Light is not off at test 6
+# ** Note: $stop    : backlightTb.v(65)
+#    Time: 150006 ns  Iteration: 0  Instance: /backlightTb
+# Break in Module backlightTb at backlightTb.v line 65
+restart; run -all
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+# Light on for one second...
+# Light on for two seconds...
+# Light on for three seconds...
+# ERROR: Light is not off at test 6
+# ** Note: $stop    : backlightTb.v(65)
+#    Time: 150006 ns  Iteration: 0  Instance: /backlightTb
+# Break in Module backlightTb at backlightTb.v line 65
+restart; run -all
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+# Light on for one second...
+# Light on for two seconds...
+# Light on for three seconds...
+# ERROR: Light is not off at test 6
+# ** Note: $stop    : backlightTb.v(65)
+#    Time: 150006 ns  Iteration: 0  Instance: /backlightTb
+# Break in Module backlightTb at backlightTb.v line 65
+vlog backlightTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:58:12 on Nov 07,2023
+# vlog -reportprogress 300 backlightTb.v 
+# -- Compiling module backlightTb
+# 
+# Top level modules:
+# 	backlightTb
+# End time: 21:58:12 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+# Light on for one second...
+# Light on for two seconds...
+# Light on for three seconds...
+# ERROR: Light is not off at test 6
+add wave -position insertpoint sim:/backlightTb/backlight/*
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+run -all
+# Light on for one second...
+# Light on for two seconds...
+# Light on for three seconds...
+# ERROR: Light is not off at test 6
+vlog backlightTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:59:40 on Nov 07,2023
+# vlog -reportprogress 300 backlightTb.v 
+# -- Compiling module backlightTb
+# 
+# Top level modules:
+# 	backlightTb
+# End time: 21:59:40 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog backlight.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:59:42 on Nov 07,2023
+# vlog -reportprogress 300 backlight.v 
+# -- Compiling module backlight_controller
+# 
+# Top level modules:
+# 	backlight_controller
+# End time: 21:59:42 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+# Light on for one second...
+# Light on for two seconds...
+# Light on for three seconds...
+# ERROR: Light is not off at test 6
+vlog backlight.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:00:36 on Nov 07,2023
+# vlog -reportprogress 300 backlight.v 
+# -- Compiling module backlight_controller
+# 
+# Top level modules:
+# 	backlight_controller
+# End time: 22:00:36 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog backlightTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:00:39 on Nov 07,2023
+# vlog -reportprogress 300 backlightTb.v 
+# -- Compiling module backlightTb
+# 
+# Top level modules:
+# 	backlightTb
+# End time: 22:00:39 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+# Light on for one second...
+# Light on for two seconds...
+# Light on for three seconds...
+# ERROR: Light is not off at test 6
+vlog backlightTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:02:58 on Nov 07,2023
+# vlog -reportprogress 300 backlightTb.v 
+# -- Compiling module backlightTb
+# 
+# Top level modules:
+# 	backlightTb
+# End time: 22:02:58 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+# Light on for one second...
+# Light on for two seconds...
+# Light on for three seconds...
+# ERROR: Light is not off at test 6
+vlog backlightTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:03:17 on Nov 07,2023
+# vlog -reportprogress 300 backlightTb.v 
+# -- Compiling module backlightTb
+# 
+# Top level modules:
+# 	backlightTb
+# End time: 22:03:17 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+# Light on for one second...
+# Light on for two seconds...
+# Light on for three seconds...
+# ERROR: Light is not off at test 6
+vlog backlightTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:04:16 on Nov 07,2023
+# vlog -reportprogress 300 backlightTb.v 
+# -- Compiling module backlightTb
+# 
+# Top level modules:
+# 	backlightTb
+# End time: 22:04:17 on Nov 07,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+# Light on for one second...
+# Light on for two seconds...
+# Light on for three seconds...
+# ERROR: Light is not off at test 6
+vlog backlightTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:05:42 on Nov 07,2023
+# vlog -reportprogress 300 backlightTb.v 
+# -- Compiling module backlightTb
+# 
+# Top level modules:
+# 	backlightTb
+# End time: 22:05:42 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+# Light on for one second...
+# Light on for two seconds...
+# Light on for three seconds...
+# ERROR: Light is not off at test 6, time               400008
+vlog -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlight.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:07:48 on Nov 07,2023
+# vlog -reportprogress 300 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlight.v 
+# -- Compiling module backlight_controller
+# 
+# Top level modules:
+# 	backlight_controller
+# End time: 22:07:48 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlightTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:07:49 on Nov 07,2023
+# vlog -reportprogress 300 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlightTb.v 
+# -- Compiling module backlightTb
+# 
+# Top level modules:
+# 	backlightTb
+# End time: 22:07:49 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/clk_divider/clk_divider.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:07:49 on Nov 07,2023
+# vlog -reportprogress 300 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/clk_divider/clk_divider.v 
+# -- Compiling module clk_divider
+# 
+# Top level modules:
+# 	clk_divider
+# End time: 22:07:49 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+# Light on for one second...
+# Light on for two seconds...
+# ERROR: Light is not on at test 5
+# ** Note: $stop    : /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlightTb.v(56)
+#    Time: 300006 ns  Iteration: 0  Instance: /backlightTb
+# Break in Module backlightTb at /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlightTb.v line 56
+vlog backlightTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:09:49 on Nov 07,2023
+# vlog -reportprogress 300 backlightTb.v 
+# -- Compiling module backlightTb
+# 
+# Top level modules:
+# 	backlightTb
+# End time: 22:09:49 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+# Light on for one second...
+# Light on for two seconds...
+# Light on for three seconds...
+# ERROR: Light is not off at test 6, time               200015
+vlog ../clk_divider/clk_divider.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:12:18 on Nov 07,2023
+# vlog -reportprogress 300 ../clk_divider/clk_divider.v 
+# -- Compiling module clk_divider
+# 
+# Top level modules:
+# 	clk_divider
+# End time: 22:12:18 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+# Light on for one second...
+# Light on for two seconds...
+# Light on for three seconds...
+# ERROR: Light is not off at test 6, time               200015
+vlog -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlight.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:12:48 on Nov 07,2023
+# vlog -reportprogress 300 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlight.v 
+# -- Compiling module backlight_controller
+# 
+# Top level modules:
+# 	backlight_controller
+# End time: 22:12:48 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlightTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:12:48 on Nov 07,2023
+# vlog -reportprogress 300 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/backlight/backlightTb.v 
+# -- Compiling module backlightTb
+# 
+# Top level modules:
+# 	backlightTb
+# End time: 22:12:49 on Nov 07,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/clk_divider/clk_divider.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:12:49 on Nov 07,2023
+# vlog -reportprogress 300 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/clk_divider/clk_divider.v 
+# -- Compiling module clk_divider
+# 
+# Top level modules:
+# 	clk_divider
+# End time: 22:12:49 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+# Light on for one second...
+# Light on for two seconds...
+# Light on for three seconds...
+# ERROR: Light is not off at test 6, time               200015
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+run -all
+# Light on for one second...
+# Light on for two seconds...
+# Light on for three seconds...
+# ERROR: Light is not off at test 6, time               200015
+vlog backlightTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:14:24 on Nov 07,2023
+# vlog -reportprogress 300 backlightTb.v 
+# -- Compiling module backlightTb
+# 
+# Top level modules:
+# 	backlightTb
+# End time: 22:14:24 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+# Light on for one second...
+# Light on for two seconds...
+# ERROR: Light is not on at test 5
+# ** Note: $stop    : backlightTb.v(57)
+#    Time: 300015 ns  Iteration: 0  Instance: /backlightTb
+# Break in Module backlightTb at backlightTb.v line 57
+vlog backlight.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:16:15 on Nov 07,2023
+# vlog -reportprogress 300 backlight.v 
+# -- Compiling module backlight_controller
+# 
+# Top level modules:
+# 	backlight_controller
+# End time: 22:16:15 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+# Light on for one second...
+# Light on for two seconds...
+# ERROR: Light is not on at test 5
+# ** Note: $stop    : backlightTb.v(57)
+#    Time: 300015 ns  Iteration: 0  Instance: /backlightTb
+# Break in Module backlightTb at backlightTb.v line 57
+vlog backlight.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:16:43 on Nov 07,2023
+# vlog -reportprogress 300 backlight.v 
+# -- Compiling module backlight_controller
+# 
+# Top level modules:
+# 	backlight_controller
+# End time: 22:16:43 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.backlightTb(fast)
+# Loading work.backlight_controller(fast)
+# Loading work.clk_divider(fast)
+# Light on for one second...
+# Light on for two seconds...
+# Light on for three seconds...
+# SUCCESS! All tests passed!
+# ** Note: $stop    : backlightTb.v(70)
+#    Time: 400015 ns  Iteration: 0  Instance: /backlightTb
+# Break in Module backlightTb at backlightTb.v line 70
+# End time: 22:17:43 on Nov 07,2023, Elapsed time: 0:25:28
+# Errors: 0, Warnings: 1

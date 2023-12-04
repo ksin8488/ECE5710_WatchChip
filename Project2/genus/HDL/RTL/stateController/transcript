@@ -1,0 +1,325 @@
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 linux_x86_64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim . 
+# Start time: 18:31:47 on Nov 06,2023
+# ** Error (suppressible): (vsim-19) Failed to access library '' at "".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# End time: 18:31:47 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Loading project stateCtrl
+# Compile of stateController.v was successful.
+# Compile of stateTb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.stateTb -voptargs=+acc
+# vsim work.stateTb -voptargs="+acc" 
+# Start time: 18:32:52 on Nov 06,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/stateTb.v(47): (vopt-7063) Failed to find '__LINE__' in hierarchical name '__LINE__'.
+#         Region: stateTb
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 18:32:53 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 6
+# Compile of stateTb.v was successful.
+vsim work.stateTb -voptargs=+acc
+# vsim work.stateTb -voptargs="+acc" 
+# Start time: 18:39:20 on Nov 06,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.stateTb(fast)
+# Loading work.watch_fsm(fast)
+run -all
+# ERROR: state is not S_STOPWATCH_SHOW_STOPPED on line          88
+# ** Note: $stop    : /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/stateTb.v(86)
+#    Time: 7 us  Iteration: 0  Instance: /stateTb
+# Break in Module stateTb at /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/stateTb.v line 86
+add wave -position insertpoint sim:/stateTb/fsm/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.stateTb(fast)
+# Loading work.watch_fsm(fast)
+run -all
+# ERROR: state is not S_STOPWATCH_SHOW_STOPPED on line          88
+# ** Note: $stop    : /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/stateTb.v(86)
+#    Time: 7 us  Iteration: 0  Instance: /stateTb
+# Break in Module stateTb at /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/stateTb.v line 86
+run -all
+# ERROR: state is not S_STOPWATCH_SHOW_RUNNING on line         123
+# ** Note: $stop    : /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/stateTb.v(124)
+#    Time: 8 us  Iteration: 0  Instance: /stateTb
+# Break in Module stateTb at /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/stateTb.v line 124
+run -all
+# ERROR: run_stopwatch is not 1'b1 on line         127
+# ** Note: $stop    : /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/stateTb.v(128)
+#    Time: 8 us  Iteration: 0  Instance: /stateTb
+# Break in Module stateTb at /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/stateTb.v line 128
+run -all
+# ERROR: reset_stopwatch is not 1'b1 on line         188
+# ** Note: $stop    : /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/stateTb.v(189)
+#    Time: 10 us  Iteration: 0  Instance: /stateTb
+# Break in Module stateTb at /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/stateTb.v line 189
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.stateTb(fast)
+# Loading work.watch_fsm(fast)
+vlog stateTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 20:57:14 on Nov 07,2023
+# vlog -reportprogress 300 stateTb.v 
+# -- Compiling module stateTb
+# 
+# Top level modules:
+# 	stateTb
+# End time: 20:57:14 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.stateTb(fast)
+# Loading work.watch_fsm(fast)
+run -all
+# ERROR: state is not S_STOPWATCH_SHOW_RUNNING on line         215
+# ** Note: $stop    : stateTb.v(221)
+#    Time: 16 us  Iteration: 0  Instance: /stateTb
+# Break in Module stateTb at stateTb.v line 221
+add wave -position insertpoint sim:/stateTb/fsm/*
+vlog stateTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 20:59:42 on Nov 07,2023
+# vlog -reportprogress 300 stateTb.v 
+# -- Compiling module stateTb
+# 
+# Top level modules:
+# 	stateTb
+# End time: 20:59:42 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.stateTb(fast)
+# Loading work.watch_fsm(fast)
+# ERROR: state is not S_STOPWATCH_SHOW_RUNNING on line         215
+# ** Note: $stop    : stateTb.v(221)
+#    Time: 21 us  Iteration: 0  Instance: /stateTb
+# Break in Module stateTb at stateTb.v line 221
+vlog stateTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:00:22 on Nov 07,2023
+# vlog -reportprogress 300 stateTb.v 
+# -- Compiling module stateTb
+# 
+# Top level modules:
+# 	stateTb
+# End time: 21:00:22 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all;
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.stateTb(fast)
+# Loading work.watch_fsm(fast)
+# ERROR: state is not S_STOPWATCH_SHOW_RUNNING on line         215
+# ** Note: $stop    : stateTb.v(221)
+#    Time: 16 us  Iteration: 0  Instance: /stateTb
+# Break in Module stateTb at stateTb.v line 221
+vlog stateTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:01:56 on Nov 07,2023
+# vlog -reportprogress 300 stateTb.v 
+# -- Compiling module stateTb
+# 
+# Top level modules:
+# 	stateTb
+# End time: 21:01:56 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.stateTb(fast)
+# Loading work.watch_fsm(fast)
+# ERROR: state is not S_STOPWATCH_SHOW_RUNNING on line         215
+# ** Note: $stop    : stateTb.v(224)
+#    Time: 17 us  Iteration: 0  Instance: /stateTb
+# Break in Module stateTb at stateTb.v line 224
+vlog stateTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:03:32 on Nov 07,2023
+# vlog -reportprogress 300 stateTb.v 
+# -- Compiling module stateTb
+# 
+# Top level modules:
+# 	stateTb
+# End time: 21:03:32 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.stateTb(fast)
+# Loading work.watch_fsm(fast)
+# ERROR: state is not S_STOPWATCH_SHOW_RUNNING on line         215
+# ** Note: $stop    : stateTb.v(224)
+#    Time: 16500 ns  Iteration: 0  Instance: /stateTb
+# Break in Module stateTb at stateTb.v line 224
+vlog stateTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:04:34 on Nov 07,2023
+# vlog -reportprogress 300 stateTb.v 
+# -- Compiling module stateTb
+# 
+# Top level modules:
+# 	stateTb
+# End time: 21:04:34 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.stateTb(fast)
+# Loading work.watch_fsm(fast)
+# ERROR: inc_h is not 1'b1 on line         290
+# ** Note: $stop    : stateTb.v(301)
+#    Time: 22 us  Iteration: 0  Instance: /stateTb
+# Break in Module stateTb at stateTb.v line 301
+vlog stateTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:06:25 on Nov 07,2023
+# vlog -reportprogress 300 stateTb.v 
+# -- Compiling module stateTb
+# 
+# Top level modules:
+# 	stateTb
+# End time: 21:06:25 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.stateTb(fast)
+# Loading work.watch_fsm(fast)
+# ERROR: dec_h is not 1'b1 on line         298
+# ** Note: $stop    : stateTb.v(310)
+#    Time: 24 us  Iteration: 0  Instance: /stateTb
+# Break in Module stateTb at stateTb.v line 310
+restart; run -all
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.stateTb(fast)
+# Loading work.watch_fsm(fast)
+# ERROR: dec_h is not 1'b1 on line         298
+# ** Note: $stop    : stateTb.v(310)
+#    Time: 24 us  Iteration: 0  Instance: /stateTb
+# Break in Module stateTb at stateTb.v line 310
+vlog stateTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:07:38 on Nov 07,2023
+# vlog -reportprogress 300 stateTb.v 
+# -- Compiling module stateTb
+# 
+# Top level modules:
+# 	stateTb
+# End time: 21:07:38 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.stateTb(fast)
+# Loading work.watch_fsm(fast)
+# ERROR: state is not S_SET_M on line         309
+# ** Note: $stop    : stateTb.v(323)
+#    Time: 27 us  Iteration: 0  Instance: /stateTb
+# Break in Module stateTb at stateTb.v line 323
+vlog stateTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:08:44 on Nov 07,2023
+# vlog -reportprogress 300 stateTb.v 
+# -- Compiling module stateTb
+# 
+# Top level modules:
+# 	stateTb
+# End time: 21:08:44 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.stateTb(fast)
+# Loading work.watch_fsm(fast)
+# ERROR: state is not S_SET_M at marker         309
+# ** Note: $stop    : stateTb.v(323)
+#    Time: 27 us  Iteration: 0  Instance: /stateTb
+# Break in Module stateTb at stateTb.v line 323
+vlog stateTb.v
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:10:52 on Nov 07,2023
+# vlog -reportprogress 300 stateTb.v 
+# -- Compiling module stateTb
+# 
+# Top level modules:
+# 	stateTb
+# End time: 21:10:52 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart; run -all
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.stateTb(fast)
+# Loading work.watch_fsm(fast)
+# ERROR: inc_m is not 1'b1 at marker         332
+# ** Note: $stop    : stateTb.v(346)
+#    Time: 28 us  Iteration: 0  Instance: /stateTb
+# Break in Module stateTb at stateTb.v line 346
+vlog stateTb.v; restart; run -all
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:11:38 on Nov 07,2023
+# vlog -reportprogress 300 stateTb.v 
+# -- Compiling module stateTb
+# 
+# Top level modules:
+# 	stateTb
+# End time: 21:11:38 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.stateTb(fast)
+# Loading work.watch_fsm(fast)
+# ERROR: inc_m is not 1'b1 at marker         332
+# ** Note: $stop    : stateTb.v(346)
+#    Time: 28 us  Iteration: 0  Instance: /stateTb
+# Break in Module stateTb at stateTb.v line 346
+add wave -position insertpoint \
+/stateTb/btn_inc 
+vlog stateTb.v; restart; run -all
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:12:48 on Nov 07,2023
+# vlog -reportprogress 300 stateTb.v 
+# -- Compiling module stateTb
+# 
+# Top level modules:
+# 	stateTb
+# End time: 21:12:48 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.stateTb(fast)
+# Loading work.watch_fsm(fast)
+# ERROR: dec_m is not 1'b1 at marker         339
+# ** Note: $stop    : stateTb.v(354)
+#    Time: 30 us  Iteration: 0  Instance: /stateTb
+# Break in Module stateTb at stateTb.v line 354
+vlog stateTb.v; restart; run -all
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:13:05 on Nov 07,2023
+# vlog -reportprogress 300 stateTb.v 
+# -- Compiling module stateTb
+# 
+# Top level modules:
+# 	stateTb
+# End time: 21:13:05 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.stateTb(fast)
+# Loading work.watch_fsm(fast)
+# All tests passed!
+# ** Note: $stop    : stateTb.v(360)
+#    Time: 31 us  Iteration: 0  Instance: /stateTb
+# Break in Module stateTb at stateTb.v line 360
+# Project file /run/media/ella/Data/Documents/School/ECE5710/ECE5710_WatchChip/RTL/stateCtrl.mpf is write protected, data cannot be saved.
+# Unable to save project.
+# End time: 21:44:22 on Nov 07,2023, Elapsed time: 27:05:02
+# Errors: 0, Warnings: 0

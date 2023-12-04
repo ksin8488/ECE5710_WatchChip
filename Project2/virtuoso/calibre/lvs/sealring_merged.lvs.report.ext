@@ -1,0 +1,33 @@
+
+
+       #############################################################
+       ##                                                         ##
+       ##               C A L I B R E    S Y S T E M              ##
+       ##                                                         ##
+       ##    C I R C U I T   E X T R A C T I O N   R E P O R T    ##
+       ##                                                         ##
+       #############################################################
+
+
+REPORT FILE NAME:         sealring_merged.lvs.report.ext
+LAYOUT NAME:              /home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/lvs/sealring_merged.calibre.db ('sealring_merged')
+CREATION TIME:            Mon Dec  4 15:25:14 2023
+CURRENT DIRECTORY:        /home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/lvs
+USER NAME:                nwestern
+CALIBRE VERSION:          v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
+
+
+
+Extraction Errors and Warnings for cell "sealring_merged"
+---------------------------------------------------------
+
+WARNING:  Stamping conflict in SCONNECT - Multiple source nets stamp one target net.
+          Use LVS REPORT OPTION S or LVS SOFTCHK statement to obtain detailed information.
+
+
+
+WARNING: Invalid PATHCHK request "! POWER": no POWER nets present, operation aborted.
+
+
+WARNING: Invalid PATHCHK request "! GROUND": no GROUND nets present, operation aborted.
+

@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/sealring_merged.dv
+dv_start matched                                  
+dv_cell {sealring_merged} {sealring_merged} matched
+dv_obj_count -transformed_nets {1609 1609} -transformed_inst {2056 2056} -transformed_port {0 0}
+dv_end

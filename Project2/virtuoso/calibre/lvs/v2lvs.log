@@ -1,0 +1,38 @@
+//  v2lvs v2021.2_37.20    Tue Jun 1 14:42:15 PDT 2021
+//
+//  Copyright (c) 1992, 1993 Regents of the University of California
+//         All rights reserved.
+//
+//                   Copyright Siemens 1996-2021
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+Running /uusoc/facility/cad_tools/Mentor/aok_cal_2021.2_37.20//pkgs/icv/pvt/v2lvs -v /home/nwestern/ECE5710_WatchChip/Project/innovus/HDL/PLACED/soc_top_placed_virtuoso.v -o /home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/lvs/_soc_top_placed_virtuoso.v.sp -w 2
+
+Info: Creating Design Database ...
+Info: Converting Design ...
+Warning: No module declaration for module pad_corner first encountered in module soc_top
+Warning: No module declaration for module pad_vdd first encountered in module soc_top
+Warning: No module declaration for module pad_gnd first encountered in module soc_top
+Warning: No module declaration for module pad_in first encountered in module soc_top
+Warning: No module declaration for module pad_out first encountered in module soc_top
+Warning: No module declaration for module INVX2 first encountered in module soc_top
+Warning: No module declaration for module DFFQX1 first encountered in module soc_top
+Warning: No module declaration for module NAND3X1 first encountered in module soc_top
+Warning: No module declaration for module NOR2X1 first encountered in module soc_top
+Warning: No module declaration for module OR2X1 first encountered in module soc_top
+Warning: No module declaration for module AND2X1 first encountered in module soc_top
+Warning: No module declaration for module NAND2X1 first encountered in module soc_top
+Warning: No module declaration for module DFFQSRX1 first encountered in module soc_top
+Warning: No module declaration for module XOR2X1 first encountered in module soc_top
+Warning: No module declaration for module MUX2X1 first encountered in module soc_top
+Warning: No module declaration for module INVX1 first encountered in module soc_top
+
+CPU TIME = 0  REAL TIME = 0  MALLOC = 9/9/9

@@ -1,0 +1,33 @@
+2023/12/04 15:23:43 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2023/12/04 15:23:43 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.09s.
+
+*WARNING* '/home/nwestern/ECE5710_WatchChip/Project/virtuoso/cds.lib', Line 13: End of DEFINE command while expecting a path.
+*WARNING* '/home/nwestern/ECE5710_WatchChip/Project/virtuoso/cds.lib', Line 14: Skipping: '/research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/oa/RA1SHD_RD'
+*WARNING* '/home/nwestern/ECE5710_WatchChip/Project/virtuoso/cds.lib', Line 15: End of DEFINE command while expecting a path.
+*WARNING* '/home/nwestern/ECE5710_WatchChip/Project/virtuoso/cds.lib', Line 16: Skipping: '/research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/oa/RF2SH'
+
+*WARNING* '/home/nwestern/ECE5710_WatchChip/Project/virtuoso/cds.lib', Line 13: End of DEFINE command while expecting a path.
+*WARNING* '/home/nwestern/ECE5710_WatchChip/Project/virtuoso/cds.lib', Line 14: Skipping: '/research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/oa/RA1SHD_RD'
+*WARNING* '/home/nwestern/ECE5710_WatchChip/Project/virtuoso/cds.lib', Line 15: End of DEFINE command while expecting a path.
+*WARNING* '/home/nwestern/ECE5710_WatchChip/Project/virtuoso/cds.lib', Line 16: Skipping: '/research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/oa/RF2SH'
+
+Initializing from libInit.il for library tsmc18...
+   --  pcell18v1a.cdn
+   --  tsmc18_updateCDFs.ile
+   --  tsmc18.cxt
+
+Loading hnlInit.cxt 
+Running Artist Hierarchical Netlisting ...
+
+ERROR (OSSHNL-109): The cellview 'watch_chip/sealring_merged/schematic' has been modified since the last extraction. Validate
+that the schematic is correct and run Check and Save to correct this error.
+
+End netlisting Dec  4 15:23:46 2023
+ERROR (OSSHNL-514): Netlist generation failed because of the errors reported above. The netlist might not have been generated at all, or the generated netlist could be corrupt. Fix the reported errors and regenerate the netlist.
+*WARNING* (ilRemoveProtect): could not find pointer; FILE hnl/hnl.cpp LINE 5252
+*WARNING* (ilRemoveProtect): could not find pointer; FILE hnl/hnl.cpp LINE 5253
+
+*WARNING* (ilRemoveProtect): could not find pointer; FILE hnl/hnl.cpp LINE 5254
+
