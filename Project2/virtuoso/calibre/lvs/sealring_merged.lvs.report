@@ -12,11 +12,11 @@
 
 
 REPORT FILE NAME:         sealring_merged.lvs.report
-LAYOUT NAME:              /home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/lvs/sealring_merged.sp ('sealring_merged')
-SOURCE NAME:              /home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/lvs/sealring_merged.sp ('sealring_merged')
-RULE FILE:                /home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/lvs/_calibre.lvs_
-CREATION TIME:            Mon Dec  4 15:25:26 2023
-CURRENT DIRECTORY:        /home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/lvs
+LAYOUT NAME:              /home/nwestern/ECE5710_WatchChip/Project2/virtuoso/calibre/lvs/sealring_merged.sp ('sealring_merged')
+SOURCE NAME:              /home/nwestern/ECE5710_WatchChip/Project2/virtuoso/calibre/lvs/sealring_merged.sp ('sealring_merged')
+RULE FILE:                /home/nwestern/ECE5710_WatchChip/Project2/virtuoso/calibre/lvs/_calibre.lvs_
+CREATION TIME:            Mon Dec  4 17:01:55 2023
+CURRENT DIRECTORY:        /home/nwestern/ECE5710_WatchChip/Project2/virtuoso/calibre/lvs
 USER NAME:                nwestern
 CALIBRE VERSION:          v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
 

@@ -1,16 +1,16 @@
 //
-//  Rule file generated on Mon Dec 04 15:25:13 MST 2023
+//  Rule file generated on Mon Dec 04 17:01:42 MST 2023
 //     by Calibre Interactive - LVS (v2021.2_37.20)
 //
 //      *** PLEASE DO NOT MODIFY THIS FILE ***
 //
 //
 
-LAYOUT PATH  "/home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/lvs/sealring_merged.calibre.db"
+LAYOUT PATH  "sealring_merged.calibre.db"
 LAYOUT PRIMARY "sealring_merged"
 LAYOUT SYSTEM GDSII
 
-SOURCE PATH "/home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/lvs/sealring_merged.sp"
+SOURCE PATH "/home/nwestern/ECE5710_WatchChip/Project2/virtuoso/calibre/lvs/sealring_merged.sp"
 SOURCE PRIMARY "sealring_merged"
 SOURCE SYSTEM SPICE
 

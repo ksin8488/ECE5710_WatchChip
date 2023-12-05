@@ -3,14 +3,14 @@
 ==================================================================================
 === CALIBRE::ERC-H SUMMARY REPORT
 ===
-Execution Date/Time:          Mon Dec  4 15:25:14 2023
+Execution Date/Time:          Mon Dec  4 17:01:43 2023
 Calibre Version:              v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
-Rule File Pathname:           /home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/lvs/_calibre.lvs_
+Rule File Pathname:           /home/nwestern/ECE5710_WatchChip/Project2/virtuoso/calibre/lvs/_calibre.lvs_
 Rule File Title:              
 Layout System:                GDSII
-Layout Path(s):               /home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/lvs/sealring_merged.calibre.db
+Layout Path(s):               sealring_merged.calibre.db
 Layout Primary Cell:          sealring_merged
-Current Directory:            /home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/lvs
+Current Directory:            /home/nwestern/ECE5710_WatchChip/Project2/virtuoso/calibre/lvs
 User Name:                    nwestern
 Maximum Results/ERC Check:    1000
 Maximum ERC Result Vertices:  4096
@@ -325,7 +325,7 @@ RULECHECK ppvdd49 ................. TOTAL Result Count = 0 (0)
 --- SUMMARY
 ---
 TOTAL CPU Time:                              8
-TOTAL REAL Time:                             11
+TOTAL REAL Time:                             10
 TOTAL Original Layer Geometries:             1709020 (5191886)
 TOTAL ERC RuleChecks Executed:               7
 TOTAL ERC RuleCheck Results Generated:       0 (0)

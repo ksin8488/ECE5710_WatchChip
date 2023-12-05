@@ -3,14 +3,14 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Mon Dec  4 15:21:12 2023
+Execution Date/Time:       Mon Dec  4 17:00:42 2023
 Calibre Version:           v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
-Rule File Pathname:        /home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/drc/_CLM18_LM16_LM152_6M_fullchip.215a_
+Rule File Pathname:        /home/nwestern/ECE5710_WatchChip/Project2/virtuoso/calibre/drc/_CLM18_LM16_LM152_6M_fullchip.215a_
 Rule File Title:           
 Layout System:             GDS
 Layout Path(s):            sealring_merged.calibre.db
 Layout Primary Cell:       sealring_merged
-Current Directory:         /home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/drc
+Current Directory:         /home/nwestern/ECE5710_WatchChip/Project2/virtuoso/calibre/drc
 User Name:                 nwestern
 Maximum Results/RuleCheck: ALL
 Maximum Result Vertices:   4096
@@ -689,7 +689,7 @@ RULECHECK DRM.R.1 ..................... NOT EXECUTED
 --- SUMMARY
 ---
 TOTAL CPU Time:                  130
-TOTAL REAL Time:                 11
+TOTAL REAL Time:                 12
 TOTAL Original Layer Geometries: 1709046 (5207856)
 TOTAL DRC RuleChecks Executed:   525
 TOTAL DRC Results Generated:     0 (0)

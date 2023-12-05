@@ -10,9 +10,9 @@
 
 
 REPORT FILE NAME:         sealring_merged.lvs.report.ext
-LAYOUT NAME:              /home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/lvs/sealring_merged.calibre.db ('sealring_merged')
-CREATION TIME:            Mon Dec  4 15:25:14 2023
-CURRENT DIRECTORY:        /home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/lvs
+LAYOUT NAME:              sealring_merged.calibre.db ('sealring_merged')
+CREATION TIME:            Mon Dec  4 17:01:43 2023
+CURRENT DIRECTORY:        /home/nwestern/ECE5710_WatchChip/Project2/virtuoso/calibre/lvs
 USER NAME:                nwestern
 CALIBRE VERSION:          v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
 

@@ -2,10 +2,10 @@
 Product   : Virtuoso(R) XStream In
 Program   : @(#)$CDS: strmin version 6.1.8-64b 06/22/2022 16:16 (sjfhw316) $
           : sub-version  IC6.1.8-64b.500.26 
-Started at: 30-Nov-2023  13:27:47
-User Name : u1174165
-Host Name : lab1-7.eng.utah.edu
-Directory : /home/u1174165/ECE5710_WatchChip/virtuoso
+Started at: 04-Dec-2023  16:58:52
+User Name : nwestern
+Host Name : lab1-35.eng.utah.edu
+Directory : /home/nwestern/ECE5710_WatchChip/Project2/virtuoso
 CADENCE Design Systems, Inc.
 ********************************************************************************
 Info: Cellview Rev Num:99,  Tech Rev Num:59
@@ -17,40 +17,109 @@ INFO (XSTRM-163): You have not used the '-viaMap' option. If a viaMap file, corr
 
 Summary of Options:
 	library				watch_chip
-	strmFile			/home/u1174165/ECE5710_WatchChip/virtuoso/calibre/drcmetalfill/design_metalfill.gds
+	strmFile			/home/nwestern/ECE5710_WatchChip/Project2/virtuoso/Ella_Kashish_Nick_.gds
 	logFile				strmIn.log
+	topCell				sealring_merged
 	view				layout
 	case				Preserve
 	layerMap			/research/ece/lnis-teaching/Designkits/tsmc180nm/pdk/tsmc18/tsmc18.layermap
 	propSeparator			,
 
-INFO (XSTRM-220): 1. Translating STRUCTURE tsmc_c018_sealring_corner_1p6m_metalfill as cellView watch_chip/tsmc_c018_sealring_corner_1p6m_metalfill/layout.
-INFO (XSTRM-220): 2. Translating STRUCTURE tsmc_c018_seal_ring_edge_1p6m_metalfill as cellView watch_chip/tsmc_c018_seal_ring_edge_1p6m_metalfill/layout.
-INFO (XSTRM-220): 3. Translating STRUCTURE DM6_L_metalfill as cellView watch_chip/DM6_L_metalfill/layout.
-INFO (XSTRM-220): 4. Translating STRUCTURE pad_gnd_metalfill as cellView watch_chip/pad_gnd_metalfill/layout.
-INFO (XSTRM-220): 5. Translating STRUCTURE pad_vdd_metalfill as cellView watch_chip/pad_vdd_metalfill/layout.
-INFO (XSTRM-220): 6. Translating STRUCTURE DM1_S_metalfill as cellView watch_chip/DM1_S_metalfill/layout.
-INFO (XSTRM-220): 7. Translating STRUCTURE DM5_S_metalfill as cellView watch_chip/DM5_S_metalfill/layout.
-INFO (XSTRM-220): 8. Translating STRUCTURE DM5_M_metalfill as cellView watch_chip/DM5_M_metalfill/layout.
-INFO (XSTRM-220): 9. Translating STRUCTURE DM5_L_metalfill as cellView watch_chip/DM5_L_metalfill/layout.
-INFO (XSTRM-220): 10. Translating STRUCTURE soc_top_metalfill as cellView watch_chip/soc_top_metalfill/layout.
-INFO (XSTRM-220): 11. Translating STRUCTURE DM4_S_metalfill as cellView watch_chip/DM4_S_metalfill/layout.
-INFO (XSTRM-220): 12. Translating STRUCTURE sealring_metalfill as cellView watch_chip/sealring_metalfill/layout.
+INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "VIA2NORTH" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
+INFO (XSTRM-81000): Via detection cannot create new via definition for "VIA2NORTH" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
+INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA9" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
+INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA9" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
+INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA17" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
+INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA17" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
+INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA18" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
+INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA18" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
+INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA19" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
+INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA19" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
+INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA24" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
+INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA24" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
+INFO (XSTRM-80075): Via detection cannot use a stdViaDef for "soc_top_VIA28" due to rounding errors. A customViaDef has been used instead. Use the -dbuPerUU option to increase the DBUperUU to enable detection of stdViaDef.
+INFO (XSTRM-81000): Via detection cannot create new via definition for "soc_top_VIA28" because the technology database is not writable. The candidate via cell will be mapped to regular cell and the references to it instances.
+INFO (XSTRM-220): 1. Translating STRUCTURE tsmc_c018_seal_ring_edge_1p6m as cellView watch_chip/tsmc_c018_seal_ring_edge_1p6m/layout.
+INFO (XSTRM-220): 2. Translating STRUCTURE tsmc_c018_sealring_corner_1p6m as cellView watch_chip/tsmc_c018_sealring_corner_1p6m/layout.
+INFO (XSTRM-220): 3. Translating STRUCTURE tsmc_c018_sealring_1p6m as cellView watch_chip/tsmc_c018_sealring_1p6m/layout.
+INFO (XSTRM-220): 4. Translating STRUCTURE pad_corner as cellView watch_chip/pad_corner/layout.
+INFO (XSTRM-220): 5. Translating STRUCTURE padboxx as cellView watch_chip/padboxx/layout.
+INFO (XSTRM-220): 6. Translating STRUCTURE padbox as cellView watch_chip/padbox/layout.
+INFO (XSTRM-220): 7. Translating STRUCTURE pad_vdd as cellView watch_chip/pad_vdd/layout.
+INFO (XSTRM-220): 8. Translating STRUCTURE met14 as cellView watch_chip/met14/layout.
+INFO (XSTRM-220): 9. Translating STRUCTURE pdio_m_CDNS_701728871420 as cellView watch_chip/pdio_m_CDNS_701728871420/layout.
+INFO (XSTRM-220): 10. Translating STRUCTURE pad_gnd as cellView watch_chip/pad_gnd/layout.
+INFO (XSTRM-220): 11. Translating STRUCTURE met14_hor as cellView watch_chip/met14_hor/layout.
+INFO (XSTRM-220): 12. Translating STRUCTURE pad_in as cellView watch_chip/pad_in/layout.
+INFO (XSTRM-220): 13. Translating STRUCTURE pad_out as cellView watch_chip/pad_out/layout.
+INFO (XSTRM-220): 14. Translating STRUCTURE INVX2 as cellView watch_chip/INVX2/layout.
+INFO (XSTRM-220): 15. Translating STRUCTURE DFFQX1 as cellView watch_chip/DFFQX1/layout.
+INFO (XSTRM-220): 16. Translating STRUCTURE NAND3X1 as cellView watch_chip/NAND3X1/layout.
+INFO (XSTRM-220): 17. Translating STRUCTURE NOR2X1 as cellView watch_chip/NOR2X1/layout.
+INFO (XSTRM-220): 18. Translating STRUCTURE OR2X1 as cellView watch_chip/OR2X1/layout.
+INFO (XSTRM-220): 19. Translating STRUCTURE AND2X1 as cellView watch_chip/AND2X1/layout.
+INFO (XSTRM-220): 20. Translating STRUCTURE NAND2X1 as cellView watch_chip/NAND2X1/layout.
+INFO (XSTRM-220): 21. Translating STRUCTURE DFFQSRX1 as cellView watch_chip/DFFQSRX1/layout.
+INFO (XSTRM-220): 22. Translating STRUCTURE XOR2X1 as cellView watch_chip/XOR2X1/layout.
+INFO (XSTRM-220): 23. Translating STRUCTURE MUX2X1 as cellView watch_chip/MUX2X1/layout.
+INFO (XSTRM-220): 24. Translating STRUCTURE INVX1 as cellView watch_chip/INVX1/layout.
+INFO (XSTRM-220): 25. Translating STRUCTURE pad_fill_4 as cellView watch_chip/pad_fill_4/layout.
+INFO (XSTRM-220): 26. Translating STRUCTURE pad_fill_2 as cellView watch_chip/pad_fill_2/layout.
+INFO (XSTRM-220): 27. Translating STRUCTURE pad_fill_01 as cellView watch_chip/pad_fill_01/layout.
+INFO (XSTRM-220): 28. Translating STRUCTURE pad_fill_005 as cellView watch_chip/pad_fill_005/layout.
+INFO (XSTRM-220): 29. Translating STRUCTURE FILL32 as cellView watch_chip/FILL32/layout.
+INFO (XSTRM-220): 30. Translating STRUCTURE FILL16 as cellView watch_chip/FILL16/layout.
+INFO (XSTRM-220): 31. Translating STRUCTURE FILL8 as cellView watch_chip/FILL8/layout.
+INFO (XSTRM-220): 32. Translating STRUCTURE FILL4 as cellView watch_chip/FILL4/layout.
+INFO (XSTRM-220): 33. Translating STRUCTURE FILL2 as cellView watch_chip/FILL2/layout.
+INFO (XSTRM-220): 34. Translating STRUCTURE FILL1 as cellView watch_chip/FILL1/layout.
+INFO (XSTRM-220): 35. Translating STRUCTURE VIA2NORTH as cellView watch_chip/VIA2NORTH/layout.
+INFO (XSTRM-220): 36. Translating STRUCTURE soc_top_VIA9 as cellView watch_chip/soc_top_VIA9/layout.
+INFO (XSTRM-220): 37. Translating STRUCTURE soc_top_VIA17 as cellView watch_chip/soc_top_VIA17/layout.
+INFO (XSTRM-220): 38. Translating STRUCTURE soc_top_VIA18 as cellView watch_chip/soc_top_VIA18/layout.
+INFO (XSTRM-220): 39. Translating STRUCTURE soc_top_VIA19 as cellView watch_chip/soc_top_VIA19/layout.
+INFO (XSTRM-220): 40. Translating STRUCTURE soc_top_VIA24 as cellView watch_chip/soc_top_VIA24/layout.
+INFO (XSTRM-220): 41. Translating STRUCTURE soc_top_VIA28 as cellView watch_chip/soc_top_VIA28/layout.
+INFO (XSTRM-220): 42. Translating STRUCTURE soc_top as cellView watch_chip/soc_top/layout.
+INFO (XSTRM-220): 43. Translating STRUCTURE sealring as cellView watch_chip/sealring/layout.
+INFO (XSTRM-220): 44. Translating STRUCTURE tsmc_c018_sealring_corner_1p6m_polyfill as cellView watch_chip/tsmc_c018_sealring_corner_1p6m_polyfill/layout.
+INFO (XSTRM-220): 45. Translating STRUCTURE tsmc_c018_seal_ring_edge_1p6m_polyfill as cellView watch_chip/tsmc_c018_seal_ring_edge_1p6m_polyfill/layout.
+INFO (XSTRM-220): 46. Translating STRUCTURE DOD_1_polyfill as cellView watch_chip/DOD_1_polyfill/layout.
+INFO (XSTRM-220): 47. Translating STRUCTURE DPO_1_polyfill as cellView watch_chip/DPO_1_polyfill/layout.
+INFO (XSTRM-220): 48. Translating STRUCTURE DOD_2_polyfill as cellView watch_chip/DOD_2_polyfill/layout.
+INFO (XSTRM-220): 49. Translating STRUCTURE DPO_2_polyfill as cellView watch_chip/DPO_2_polyfill/layout.
+INFO (XSTRM-220): 50. Translating STRUCTURE pad_gnd_polyfill as cellView watch_chip/pad_gnd_polyfill/layout.
+INFO (XSTRM-220): 51. Translating STRUCTURE pad_vdd_polyfill as cellView watch_chip/pad_vdd_polyfill/layout.
+INFO (XSTRM-220): 52. Translating STRUCTURE soc_top_polyfill as cellView watch_chip/soc_top_polyfill/layout.
+INFO (XSTRM-220): 53. Translating STRUCTURE sealring_polyfill as cellView watch_chip/sealring_polyfill/layout.
+INFO (XSTRM-220): 54. Translating STRUCTURE tsmc_c018_sealring_corner_1p6m_metalfill as cellView watch_chip/tsmc_c018_sealring_corner_1p6m_metalfill/layout.
+INFO (XSTRM-220): 55. Translating STRUCTURE tsmc_c018_seal_ring_edge_1p6m_metalfill as cellView watch_chip/tsmc_c018_seal_ring_edge_1p6m_metalfill/layout.
+INFO (XSTRM-220): 56. Translating STRUCTURE DM6_L_metalfill as cellView watch_chip/DM6_L_metalfill/layout.
+INFO (XSTRM-220): 57. Translating STRUCTURE pad_gnd_metalfill as cellView watch_chip/pad_gnd_metalfill/layout.
+INFO (XSTRM-220): 58. Translating STRUCTURE pad_vdd_metalfill as cellView watch_chip/pad_vdd_metalfill/layout.
+INFO (XSTRM-220): 59. Translating STRUCTURE DM1_S_metalfill as cellView watch_chip/DM1_S_metalfill/layout.
+INFO (XSTRM-220): 60. Translating STRUCTURE DM5_S_metalfill as cellView watch_chip/DM5_S_metalfill/layout.
+INFO (XSTRM-220): 61. Translating STRUCTURE DM5_M_metalfill as cellView watch_chip/DM5_M_metalfill/layout.
+INFO (XSTRM-220): 62. Translating STRUCTURE DM5_L_metalfill as cellView watch_chip/DM5_L_metalfill/layout.
+INFO (XSTRM-220): 63. Translating STRUCTURE soc_top_metalfill as cellView watch_chip/soc_top_metalfill/layout.
+INFO (XSTRM-220): 64. Translating STRUCTURE DM4_S_metalfill as cellView watch_chip/DM4_S_metalfill/layout.
+INFO (XSTRM-220): 65. Translating STRUCTURE sealring_metalfill as cellView watch_chip/sealring_metalfill/layout.
+INFO (XSTRM-220): 66. Translating STRUCTURE sealring_merged as cellView watch_chip/sealring_merged/layout.
 
 Summary of Objects Translated:
-	Instances:                              7747
+	Instances:                              41257
 	CustomVias:                             0
-	StandardVias:                           0
+	StandardVias:                           19921
 	CdsGenVias:                             0
-	Arrays:                                 5120
-	Polygons:                               18
-	Paths:                                  0
+	Arrays:                                 5299
+	Polygons:                               432
+	Paths:                                  3490
 	PathSegs:                               0
-	Rectangles:                             1130386
-	Text:                                   0
+	Rectangles:                             1180329
+	Text:                                   18149
 	Node:                                   0
 	Line:                                   0
-	Cells:                                  12
+	Cells:                                  66
 
-Elapsed Time: 2.1s   User Time: 0.5s   CPU Time: 0.1s   Peak VM: 51184KB  CPUs Used: 2
+Elapsed Time: 9.3s   User Time: 9.3s   CPU Time: 0.1s   Peak VM: 53652KB  CPUs Used: 2
 INFO (XSTRM-234): Translation completed. '0' error(s) and '2' warning(s) found.

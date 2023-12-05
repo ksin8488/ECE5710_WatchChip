@@ -1,31 +1,31 @@
 sealring_merged 1000
 mnpg
-0 0 2 Dec  4 15:25:25 2023                                                      
-Rule File Pathname: /home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/lvs/_calibre.lvs_
+0 0 2 Dec  4 17:01:54 2023                                                      
+Rule File Pathname: /home/nwestern/ECE5710_WatchChip/Project2/virtuoso/calibre/lvs/_calibre.lvs_
 MOS connected to both power and ground
 mppg
-0 0 2 Dec  4 15:25:25 2023                                                      
-Rule File Pathname: /home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/lvs/_calibre.lvs_
+0 0 2 Dec  4 17:01:54 2023                                                      
+Rule File Pathname: /home/nwestern/ECE5710_WatchChip/Project2/virtuoso/calibre/lvs/_calibre.lvs_
 MOS connected to both power and ground
 floating
-0 0 2 Dec  4 15:25:25 2023                                                      
-Rule File Pathname: /home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/lvs/_calibre.lvs_
+0 0 2 Dec  4 17:01:54 2023                                                      
+Rule File Pathname: /home/nwestern/ECE5710_WatchChip/Project2/virtuoso/calibre/lvs/_calibre.lvs_
 Please check the floating gate
 floating.nxwell_float
-0 0 3 Dec  4 15:25:25 2023
+0 0 3 Dec  4 17:01:54 2023
 ERROR IN PATHCHK                                     
-Rule File Pathname: /home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/lvs/_calibre.lvs_
+Rule File Pathname: /home/nwestern/ECE5710_WatchChip/Project2/virtuoso/calibre/lvs/_calibre.lvs_
 Floating nxwell_float is not allowed
 floating.psub
-0 0 3 Dec  4 15:25:25 2023
+0 0 3 Dec  4 17:01:54 2023
 ERROR IN PATHCHK                                     
-Rule File Pathname: /home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/lvs/_calibre.lvs_
+Rule File Pathname: /home/nwestern/ECE5710_WatchChip/Project2/virtuoso/calibre/lvs/_calibre.lvs_
 Floating psub is not allowed
 npvss49
-0 0 2 Dec  4 15:25:25 2023                                                      
-Rule File Pathname: /home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/lvs/_calibre.lvs_
+0 0 2 Dec  4 17:01:54 2023                                                      
+Rule File Pathname: /home/nwestern/ECE5710_WatchChip/Project2/virtuoso/calibre/lvs/_calibre.lvs_
 ntap connected to GROUND
 ppvdd49
-0 0 2 Dec  4 15:25:25 2023                                                      
-Rule File Pathname: /home/nwestern/ECE5710_WatchChip/Project/virtuoso/calibre/lvs/_calibre.lvs_
+0 0 2 Dec  4 17:01:54 2023                                                      
+Rule File Pathname: /home/nwestern/ECE5710_WatchChip/Project2/virtuoso/calibre/lvs/_calibre.lvs_
 ptap connected to POWER

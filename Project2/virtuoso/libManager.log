@@ -1,31 +1,40 @@
 \o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 06/21/2022 12:53 (cpgsrv12) $
 \o Sub version:		sub-version  s266 
-\o Arguments:		-mpssession virtuoso951539 -mpshost lab1-35.eng.utah.edu 
-\o Working Directory:	lab1-35.eng.utah.edu:/home/nwestern/ECE5710_WatchChip/Project/virtuoso
+\o Arguments:		-mpssession virtuoso963934 -mpshost lab1-35.eng.utah.edu 
+\o Working Directory:	lab1-35.eng.utah.edu:/home/nwestern/ECE5710_WatchChip/Project2/virtuoso
 \o 64-bit offsets
 \o Qt version: 		5.9.1
-\o Log file is "/home/nwestern/ECE5710_WatchChip/Project/virtuoso/libManager.log".
+\o Log file is "/home/nwestern/ECE5710_WatchChip/Project2/virtuoso/libManager.log".
 \o Opening libManager window.
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(129 135 1053 690))
-\o changeWorkingDir("/home/nwestern/ECE5710_WatchChip/Project/virtuoso") unnecessary.
+\a nrResizeWindow(cdsLibManager list(129 135 1274 690))
+\o changeWorkingDir("/home/nwestern/ECE5710_WatchChip/Project2/virtuoso") unnecessary.
 \o ddSetForcedLib("") unnecessary.
 \o MPS service: map window
-\w Warning: '/home/nwestern/ECE5710_WatchChip/Project/virtuoso/cds.lib', Line 13: End of DEFINE command while expecting a path.
-\w Warning: '/home/nwestern/ECE5710_WatchChip/Project/virtuoso/cds.lib', Line 14: Skipping: '/research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/oa/RA1SHD_RD'
-\o  
-\w Warning: '/home/nwestern/ECE5710_WatchChip/Project/virtuoso/cds.lib', Line 15: End of DEFINE command while expecting a path.
-\w Warning: '/home/nwestern/ECE5710_WatchChip/Project/virtuoso/cds.lib', Line 16: Skipping: '/research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/oa/RF2SH'
-\o  
 \o Library Manager customization server connected.
 \a cdsLibManager->libListBox->value = "watch_chip"
 \a cdsLibManager->libLineEdit->value = "watch_chip"
-\a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->libListBox->value = "watch_chip"
 \a cdsLibManager->libLineEdit->value = "watch_chip"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "watch_chip"
+\a cdsLibManager->libLineEdit->value = "watch_chip"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "FILL2"
+\a cdsLibManager->cellLineEdit->value = "FILL2"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
 \a cdsLibManager->cellListBox->value = "sealring_merged"
 \a cdsLibManager->cellLineEdit->value = "sealring_merged"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = "layout"
 \a cdsLibManager->viewLineEdit->value = "layout"
 \o MPS request: edit design
@@ -36,12 +45,6 @@
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
-\w Warning: '/home/nwestern/ECE5710_WatchChip/Project/virtuoso/cds.lib', Line 13: End of DEFINE command while expecting a path.
-\w Warning: '/home/nwestern/ECE5710_WatchChip/Project/virtuoso/cds.lib', Line 14: Skipping: '/research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/oa/RA1SHD_RD'
-\o  
-\w Warning: '/home/nwestern/ECE5710_WatchChip/Project/virtuoso/cds.lib', Line 15: End of DEFINE command while expecting a path.
-\w Warning: '/home/nwestern/ECE5710_WatchChip/Project/virtuoso/cds.lib', Line 16: Skipping: '/research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/oa/RF2SH'
-\o  
 \a cdsLibManager->libListBox->value = "watch_chip"
 \a cdsLibManager->libLineEdit->value = "watch_chip"
 \a cdsLibManager->cellListBox->value = "sealring_merged"
@@ -53,50 +56,6 @@
 \a cdsLibManager->viewListBox->value = "layout"
 \a cdsLibManager->viewLineEdit->value = "layout"
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\w Warning: '/home/nwestern/ECE5710_WatchChip/Project/virtuoso/cds.lib', Line 13: End of DEFINE command while expecting a path.
-\w Warning: '/home/nwestern/ECE5710_WatchChip/Project/virtuoso/cds.lib', Line 14: Skipping: '/research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/oa/RA1SHD_RD'
-\o  
-\w Warning: '/home/nwestern/ECE5710_WatchChip/Project/virtuoso/cds.lib', Line 15: End of DEFINE command while expecting a path.
-\w Warning: '/home/nwestern/ECE5710_WatchChip/Project/virtuoso/cds.lib', Line 16: Skipping: '/research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/oa/RF2SH'
-\o  
-\a cdsLibManager->libListBox->value = "watch_chip"
-\a cdsLibManager->libLineEdit->value = "watch_chip"
-\a cdsLibManager->cellListBox->value = "sealring_merged"
-\a cdsLibManager->cellLineEdit->value = "sealring_merged"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\w Warning: '/home/nwestern/ECE5710_WatchChip/Project/virtuoso/cds.lib', Line 13: End of DEFINE command while expecting a path.
-\w Warning: '/home/nwestern/ECE5710_WatchChip/Project/virtuoso/cds.lib', Line 14: Skipping: '/research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/oa/RA1SHD_RD'
-\o  
-\w Warning: '/home/nwestern/ECE5710_WatchChip/Project/virtuoso/cds.lib', Line 15: End of DEFINE command while expecting a path.
-\w Warning: '/home/nwestern/ECE5710_WatchChip/Project/virtuoso/cds.lib', Line 16: Skipping: '/research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/oa/RF2SH'
-\o  
-\a cdsLibManager->libListBox->value = "watch_chip"
-\a cdsLibManager->libLineEdit->value = "watch_chip"
-\a cdsLibManager->cellListBox->value = "sealring_merged"
-\a cdsLibManager->cellLineEdit->value = "sealring_merged"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a _lmgrCloseIconify("cdsLibManager" 1)
 \o MPS service: shutdown
