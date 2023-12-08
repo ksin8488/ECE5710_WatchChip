@@ -1,1 +1,0 @@
-("sealring:/\tsealring watch_chip layout" (("open" (nil hierarchy "/{watch_chip sealring layout }:a"))) (((-1654.481 -1751.686) (7450.639 2342.738)) "a" "Virtuoso XL" 1))("soc_top:/\tsoc_top watch_chip layout" (("open" (nil hierarchy "/{watch_chip soc_top layout }:a"))) (((-390.568 -1204.146) (5704.808 1747.152)) "a" "Layout" 2))

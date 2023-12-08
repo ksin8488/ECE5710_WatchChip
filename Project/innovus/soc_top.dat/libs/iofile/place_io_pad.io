@@ -1,1 +1,0 @@
-/home/u1224540/5710/Project/innovus/SCRIPTS/place_io_pad.io
